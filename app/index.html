@@ -1,14 +1,145 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Mebel</title>
 </head>
-<body>
-    
 
-    <script src="js/main.jsnpm i gulp-sass"></script>
+<body>
+    <header class="menu">
+        <div class="container">
+            <div class="menu__wrapper">
+                <div class="menu__logo">
+                    <a href="#"><img class="menu__logo" src="icons/logo.svg" alt="logo"></a>
+                </div>
+                <nav>
+                    <ul class="menu__items">
+                        <li class="menu__item"><a href="#">Главная</a></li>
+                        <li class="menu__item"><a href="#">О нас</a></li>
+                        <li class="menu__item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <div class="menu__search">
+                    <img class="menu__search-icon" src="icons/search-icon.svg" alt="search-icon">
+                    <input class="menu__search-area" placeholder="Поиск" style="padding: 0 20px 0 40px;" type="text">
+                </div>
+
+                <div class="menu__phone">
+                    <img class="menu__phone-icon" src="icons/phone-icon.svg" alt="phone">
+                    <a class="menu__phone-link" href="tel:+89648999119">8 (964) 89 99 119</a>
+                </div>
+                <div class="menu__delivery">
+                    <img class="menu__delivery-icon" src="icons/delivery-icon.svg" alt="delivery">
+                    <a class="menu__delivery-link" href="#">Доставка</a>
+                </div>
+                <div class="menu__icons">
+                    <a class="menu__icons-chosen" href=""><img src="icons/heart-icon.svg" alt="heart"></a>
+                    <a class="menu__icons-bag" href="">
+                        <img src="icons/bag-icon.svg" alt="bag">
+                        <span></span>
+                    </a>
+                    <a class="menu__icons-profile" href=""><img src="icons/profile-icon.svg" alt="profile"></a>
+                </div>
+            </div>
+            <div class="menu__categories">
+                <a class="menu__category" href="#">
+                    <img src="icons/kitchen-icon.svg" alt="kitchen">
+                    <div class="menu__category-descr">Кухни</div>
+                </a>
+
+                <a class="menu__category" href="#">
+                    <img src="icons/bedroom-icon.svg" alt="bedroom">
+                    <div class="menu__category-descr">Спальни</div>
+                </a>
+
+                <a class="menu__category" href="#">
+                    <img src="icons/livingroom-icon.svg" alt="livingroom">
+                    <div class="menu__category-descr">Гостинные</div>
+                </a>
+
+                <a class="menu__category" href="#">
+                    <img src="icons/closet-icon.svg" alt="closet">
+                    <div class="menu__category-descr">Прихожая</div>
+                </a>
+
+                <a class="menu__category" href="#">
+                    <img src="icons/office-icon.svg" alt="office">
+                    <div class="menu__category-descr">Офисная мебель</div>
+                </a>
+
+                <a class="menu__category" href="#">
+                    <img src="icons/childrensroom-icon.svg" alt="childrensroom">
+                    <div class="menu__category-descr">Детская</div>
+                </a>
+                <a class="menu__category-stock" href="#">Акция</a>
+                <a class="menu__category-span" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="box"></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div>
+                    <h3>Навигация</h3>
+                    <div class="footer__navigation">
+                        <div>
+                            <a href="#">Кухни</a>
+                            <a href="#">Спальни</a>
+                            <a href="#">Гостинные</a>
+                        </div>
+                        <div>
+                            <a href="#">Прихожие</a>
+                            <a href="#">Офисная мебель</a>
+                            <a href="#">Детская</a>
+                        </div>
+                        <div>
+                            <a class="" href="#">Шкафы</a>
+                            <a class="" href="#">Матрасы</a>
+                            <a class="" href="#">Мягкая мебель</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer__address">
+                        <h3>LM</h3>
+                        <p>г. Анапа, Анапское шоссе,
+                            <br> 30 Ж/К Черное море</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__contacts">
+                <div class="footer__contacts-stock">
+                    <a href="#"><span>Акция</span></a>
+                    <a href="#">Новинки</a>
+                </div>
+                <div class="footer__contacts-social">
+                    <a class="footer__contacts-phone" href="tel:+79648999119">
+                        <img src="icons/phone-icon.svg" alt="phone">
+                        8 (964) 89 99 119
+                    </a>
+                    <a class="footer__contacts-inst" href="#">
+                        <img src="icons/instagram-icons.svg" alt="instagram">
+                        instagram
+                    </a>
+                    <a class="footer__contacts-mail" href="#">
+                        <img src="icons/mail-icons.svg" alt="mail">
+                        mebel_loft_anapa@mail.ru
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

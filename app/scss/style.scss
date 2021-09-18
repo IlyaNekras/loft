@@ -1,3 +1,24 @@
-.test{
-    background-color: #fff;
+body{
+    min-height: 470px;
 }
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: block;
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+a{
+    color: #414141;
+    text-decoration: none;
+}
+@import 'base/variables';
+
+
+@import 'blocks/menu';
+@import 'blocks/footer';
