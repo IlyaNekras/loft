@@ -14,59 +14,114 @@
 
     &__item {
         position: relative;
-        margin: 35px 15px;
-        padding: 0 5px;
+        margin-top: 35px;
+        padding: 0 20px 32px;
+        width: 263px;
+        z-index: 99;
+    }
+    &__item-1  {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 20px 32px;
+        width: 263px;
+        opacity: 0;
+        color: $main-color;
+        background-color: #fff;
+        &:hover {
+            opacity: 1;
+            box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.11);
+            z-index: 999;
+        }
     }
     &__icon,
-    &__icon-percent{
+    &__icon-percent {
         position: absolute;
         top: 21px;
         right: 15.5px;
     }
-    &__text-percent{
+
+    &__text-percent {
         position: absolute;
         left: 41.5px;
         top: 24px;
         font-size: 12px;
     }
-    &__icon-percent{
+
+    &__icon-percent {
         left: 15.5px;
     }
+
     &__img {
+        display: block;
+        margin: 0 auto;
         padding-top: 74px;
     }
-    &__name{
+
+    &__name {
         margin-top: 54px;
         font-size: 16px;
         font-weight: 700;
         color: $main-color;
     }
-    &__subname{
+
+    &__subname {
         margin-top: 6px;
         font-size: 11px;
         font-weight: 400;
         color: $main-color;
     }
-    &__price{
+
+    &__price {
         margin-top: 9px;
+        margin-bottom: 15px;
         font-size: 16px;
         font-weight: 700;
         color: $main-color;
     }
-    &__price-box{
+
+    &__price-box {
         display: flex;
         align-items: flex-end;
     }
-    &__price-new{
+
+    &__price-new {
         margin-top: 9px;
         font-size: 16px;
         font-weight: 700;
         color: $main-color;
     }
-    &__price-old{
+
+    &__price-old {
         text-decoration: line-through;
         font-size: 12px;
         color: #CCCCCC;
         padding-left: 6px;
     }
+
+    h4 {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    
+    &__dimensions-descr {
+        display: flex;
+        align-items: center;
+        font-size: 9px;
+        margin-bottom: 17px;
+    }
+
+    &__dimensions-descr span {
+        padding: 0 15px;
+    }
+
+    &__btn {
+        width: 223px;
+        height: 40px;
+        background: #245462;
+        color: #fff;
+        font-size: 13px;
+        border: none;
+    }
+
 }
