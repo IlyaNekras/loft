@@ -18,13 +18,13 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('html', function() {
-    return gulp.src('app/*.html')
+    return gulp.src('app/**.html')
         .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('watch', function() {
     gulp.watch('app/scss/**/**.scss', gulp.parallel('scss'));
-    gulp.watch('app/*html', gulp.parallel('html'));
+    gulp.watch('app/**.html', gulp.parallel('html'));
 });
 
 gulp.task('default', gulp.parallel('browser-sync', 'watch'));

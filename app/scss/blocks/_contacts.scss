@@ -1,0 +1,131 @@
+.contacts {
+    padding: 40px 0 70px 0;
+
+    h3 {
+        margin-top: 40px;
+        margin-bottom: 25px;
+        font-size: 16px;
+        color: $main-color;
+        font-weight: 400;
+    }
+
+    &__box {
+        display: flex;
+    }
+
+    &__form {
+        display: flex;
+        width: 457px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    p {
+        font-size: 12px;
+        color: $text-color;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    span {
+        margin-left: 10px;
+    }
+
+    &__name,
+    &__email,
+    &__message {
+        box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.07);
+        background: #FCFCFC;
+        border: none;
+        padding: 0 10px;
+        outline: none;
+    }
+
+    &__name {
+        width: 207px;
+        height: 38px;
+    }
+
+    &__email {
+        width: 240px;
+        height: 38px;
+        margin-left: 10px;
+    }
+
+    &__message {
+        width: 457px;
+        height: 142px;
+        resize: none;
+        padding: 10px;
+    }
+
+    &__btn {
+        width: 149px;
+        height: 40px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+        border: none;
+        margin-top: 20px;
+        background-color: #fff;
+        color: $main-color;
+        font-size: 13px;
+        cursor: pointer;
+    }
+    &__btn-submit {
+        background-color: #245462;
+        width: 106px;
+        height: 40px;
+        border: none;
+        margin-top: 20px;
+        color: #fff;
+        margin-left: 20px;
+        cursor: pointer;
+        font-size: 13px;
+    }
+
+    &__items {
+        width: 365px;
+        margin-top: 33px;
+        margin-left: 99px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 57px;
+
+        p {
+            margin: 0;
+            color: $main-color;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+
+        p,
+        a {
+            margin: 0;
+            color: $main-color;
+            font-size: 14px;
+            padding-left: 10px;
+        }
+
+        &:nth-child(2) {
+            margin-left: 37px;
+        }
+
+        &:nth-child(3) {
+            text-transform: uppercase;
+            margin-bottom: 0;
+            font-size: 12px;
+        }
+    }
+
+    img {
+        width: 14px;
+        height: 14px;
+
+    }
+
+}
