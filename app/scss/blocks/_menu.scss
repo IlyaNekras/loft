@@ -18,14 +18,24 @@
         display: flex;
         margin-right: 10px;
         list-style-type: none;
+        li{
+            a {
+                &:hover{
+                    color: $color;
+                }
+            }
+        }
     }
 
     &__item {
         font-size: 14px;
+
         &:nth-child(2) {
             padding: 0 30px;
         }
     }
+
+
 
     &__search {
         display: flex;
@@ -107,22 +117,27 @@
 
     &__category {
         height: 100%;
+
         &:first-child {
             padding-left: 25px;
         }
+
         &:hover {
-            background-color: #245462;
+            background-color: $color;
             color: #fff;
         }
     }
+
     &__category-item {
         display: flex;
         margin-top: 25px;
         align-items: center;
     }
-    &__category-hover{
+
+    &__category-hover {
         display: none;
     }
+
     &__category img {
         display: block;
         margin-left: 24px;
@@ -132,11 +147,13 @@
         margin-left: 10px;
         margin-right: 25px;
     }
-    &__category-links{
+
+    &__category-links {
         display: flex;
         flex-direction: column;
 
     }
+
     &__category-span {
         display: flex;
         height: 27px;

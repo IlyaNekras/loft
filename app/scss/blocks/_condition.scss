@@ -1,0 +1,25 @@
+.condition {
+    height: 475px;
+    padding: 50px 10px 95px;
+
+    &__items {
+        margin-top: 90px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    &__box{
+        margin-left: 30px;
+    }
+    &__descr {
+        margin-top: 10px;
+        width: 440px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #686868;
+    }
+
+}
