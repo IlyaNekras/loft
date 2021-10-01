@@ -1,7 +1,9 @@
 .about {
     padding: 18px 10px 50px;
     position: relative;
-
+    h2{
+        text-align: start;
+    }
     &__box {
         width: 422px;
         height: 500px;

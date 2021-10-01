@@ -1,0 +1,26 @@
+.saving {
+    padding: 50px 10px 87px;
+
+    &__items {
+        margin-top: 75px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        width: 321px;
+    }
+
+    &__descr {
+        width: 280px;
+        margin-left: 30px;
+        font-size: 14px;
+        line-height: 20px;
+        color: $text-color;
+        span{
+            font-weight: 700;
+        }
+    }
+}
