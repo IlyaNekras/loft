@@ -3,6 +3,11 @@
     width: 100%;
     padding: 46px 0 30px 0;
 
+
+
+
+
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -18,9 +23,10 @@
         display: flex;
         margin-right: 10px;
         list-style-type: none;
-        li{
+
+        li {
             a {
-                &:hover{
+                &:hover {
                     color: $color;
                 }
             }
@@ -34,8 +40,6 @@
             padding: 0 30px;
         }
     }
-
-
 
     &__search {
         display: flex;
@@ -108,25 +112,36 @@
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
     }
 
+    &__categories ul ul {
+        display: none;
+        list-style-type: none;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+    }
+
     &__category-box {
         display: flex;
         justify-content: space-around;
         align-items: center;
         height: 100%;
+        z-index: 2;
     }
 
     &__category {
         height: 100%;
-
-        &:first-child {
-            padding-left: 25px;
-        }
-
+        list-style-type: none;
         &:hover {
             background-color: $color;
-            color: #fff;
+            ul {
+                display: block;
+            }
         }
     }
+
+
+
+
+
 
     &__category-item {
         display: flex;
@@ -134,9 +149,6 @@
         align-items: center;
     }
 
-    &__category-hover {
-        display: none;
-    }
 
     &__category img {
         display: block;
@@ -148,10 +160,31 @@
         margin-right: 25px;
     }
 
+    &__category-hover {}
+
     &__category-links {
         display: flex;
         flex-direction: column;
+        margin-top: 22px;
+        li{
+            padding-top: 25px;
+            // &:first-child{
+            //     margin-top: 0;
+            // }
+        }
+    }
 
+    &__category-link {
+        // margin-top: 25px;
+        // &:first-child{
+        //     margin-top: 10px;
+        // }
+        
+        a {
+            &:hover {
+                color: $color;
+            }
+        }
     }
 
     &__category-span {
