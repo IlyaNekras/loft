@@ -50,7 +50,7 @@
             <div class="menu__categories">
                 <ul class="menu__category-box">
                     <li class="menu__category">
-                        <div class="menu__category-item">
+                        <div class="menu__category-item menu__category-item_img">
                             <img src="icons/kitchen-icon.svg" alt="kitchen">
                             <a class="menu__category-descr">Кухни</a>
                         </div>
@@ -267,11 +267,20 @@
 
                 </ul>
                 <a class="menu__category-stock" href="#">Акция</a>
-                <div class="menu__category-span">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="menu__category-hidden">
+                    <button class="menu__category-point">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="menu__category-list">
+                        <li>Новинки</li>
+                        <li>Шкафы</li>
+                        <li>Матрасы</li>
+                        <li>Мягкая мебель</li>
+                    </ul>
                 </div>
+
             </div>
         </div>
     </header>
@@ -290,40 +299,42 @@
     <section class="catalog">
         <div class="container">
             <h4>Хиты продаж</h4>
-            <v class="catalog__items">
+            <div class="catalog__items">
                 <div class="catalog__item">
                     <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
                     <a href="#"><img class="catalog__img" src="img/furniture/chair1.png" alt="chair1"></a>
-                    <a href="#">
-                        <div class="catalog__name">Валенсия Beige</div>
-                    </a>
+                    <div class="catalog__name">Валенсия Beige</div>
                     <div class="catalog__subname">Барные стулья</div>
                     <div class="catalog__price">2 300₽</div>
 
-
-                    <div class="catalog__item-1">
-                        <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                        <a href="#"><img class="catalog__img" src="img/furniture/chair1.png" alt="chair1"></a>
-                        <a href="#">
-                            <div class="catalog__name">Валенсия Beige</div>
-                        </a>
-                        <div class="catalog__subname">Барные стулья</div>
-                        <div class="catalog__price">2 300₽</div>
-                        <div class="catalog__dimensions">
-                            <h4>Размеры</h4>
-                            <div class="catalog__dimensions-descr">
-                                <p>ширина 43 см</p>
-                                <span>Х</span>
-                                <p>глубина 43 см</p>
-                                <span>Х</span>
-                                <p>высота 77 см</p>
-                            </div>
-                            <button class="catalog__btn">Добавить в корзину</button>
+                </div>
+                <div class="catalog__item-1">
+                    <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
+                    <a href="#"><img class="catalog__img" src="img/furniture/chair1.png" alt="chair1"></a>
+                    <div class="catalog__name">Валенсия Beige</div>
+                    <div class="catalog__subname">Барные стулья</div>
+                    <div class="catalog__price">2 300₽</div>
+                    <div class="catalog__dimensions">
+                        <h4>Размеры</h4>
+                        <div class="catalog__dimensions-descr">
+                            <p>ширина 43 см</p>
+                            <span>Х</span>
+                            <p>глубина 43 см</p>
+                            <span>Х</span>
+                            <p>высота 77 см</p>
                         </div>
+                        <button class="catalog__btn">Добавить в корзину</button>
                     </div>
                 </div>
 
                 <div class="catalog__item">
+                    <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
+                    <a href="#"><img class="catalog__img" src="img/furniture/chair2.png" alt="chair2"></a>
+                    <div class="catalog__name">Толикс-2 White Gdivoss</div>
+                    <div class="catalog__subname">Барные стулья</div>
+                    <div class="catalog__price">4 690₽</div>
+                </div>
+                <div class="catalog__item-1">
                     <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
                     <a href="#"><img class="catalog__img" src="img/furniture/chair2.png" alt="chair2"></a>
                     <a href="#">
@@ -331,28 +342,17 @@
                     </a>
                     <div class="catalog__subname">Барные стулья</div>
                     <div class="catalog__price">4 690₽</div>
-
-
-                    <div class="catalog__item-1">
-                        <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                        <a href="#"><img class="catalog__img" src="img/furniture/chair2.png" alt="chair2"></a>
-                        <a href="#">
-                            <div class="catalog__name">Толикс-2 White Gdivoss</div>
-                        </a>
-                        <div class="catalog__subname">Барные стулья</div>
-                        <div class="catalog__price">4 690₽</div>
-                        <div class="catalog__dimensions">
-                            <h4>Размеры</h4>
-                            <div class="catalog__dimensions-descr">
-                                <p>ширина 43 см</p>
-                                <span>Х</span>
-                                <p>глубина 43 см</p>
-                                <span>Х</span>
-                                <p>высота 77 см</p>
-                            </div>
-                            <button class="catalog__btn">Добавить в корзину</button>
-
+                    <div class="catalog__dimensions">
+                        <h4>Размеры</h4>
+                        <div class="catalog__dimensions-descr">
+                            <p>ширина 43 см</p>
+                            <span>Х</span>
+                            <p>глубина 43 см</p>
+                            <span>Х</span>
+                            <p>высота 77 см</p>
                         </div>
+                        <button class="catalog__btn">Добавить в корзину</button>
+
                     </div>
                 </div>
 
@@ -377,9 +377,7 @@
                         <p class="catalog__text-percent">-25%</p>
                         <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
                         <a href="#"><img class="catalog__img" src="img/furniture/sova1.png" alt="sova1"></a>
-                        <a href="#">
-                            <div class="catalog__name">Динс Velvet Yelldivw</div>
-                        </a>
+                        <a href="#" class="catalog__name">Динс Velvet Yelldivw</a>
                         <div class="catalog__subname">Диваны</div>
                         <div class="catalog__price-box">
                             <div class="catalog__price-new">28 490₽</div>
@@ -561,7 +559,7 @@
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
     </section>
     <footer class="footer">
         <div class="container">

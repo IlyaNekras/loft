@@ -105,7 +105,7 @@
     &__categories {
         margin-top: 20px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         height: 70px;
         font-size: 16px;
@@ -130,23 +130,36 @@
     &__category {
         height: 100%;
         list-style-type: none;
+        width: 150px;
+
+        &:nth-child(5) {
+            width: 211px;
+        }
+
         &:hover {
             background-color: $color;
+            cursor: pointer;
+
             ul {
                 display: block;
+                width: 189px;
+            }
+
+            .menu__category-descr {
+                color: #fff;
             }
         }
+
     }
-
-
-
-
-
 
     &__category-item {
         display: flex;
         margin-top: 25px;
         align-items: center;
+
+        &_img {
+            margin-left: 15px;
+        }
     }
 
 
@@ -160,26 +173,21 @@
         margin-right: 25px;
     }
 
-    &__category-hover {}
 
     &__category-links {
-        display: flex;
-        flex-direction: column;
         margin-top: 22px;
-        li{
+        padding: 25px;
+        font-size: 14px;
+        li {
             padding-top: 25px;
-            // &:first-child{
-            //     margin-top: 0;
-            // }
+
+            &:first-child {
+                padding-top: 0;
+            }
         }
     }
 
     &__category-link {
-        // margin-top: 25px;
-        // &:first-child{
-        //     margin-top: 10px;
-        // }
-        
         a {
             &:hover {
                 color: $color;
@@ -187,13 +195,51 @@
         }
     }
 
-    &__category-span {
+    &__category-stock {
+        font-size: 16px;
+        color: #D74444;
+        margin-left: 25px;
+    }
+    &__category-hidden{
+        position: relative;
+    }
+
+    &__category-list{
+        position: absolute;
+        display: none;
+        right: -1px;
+        padding: 25px;
+        width: 151px;
+        z-index: 1;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+        list-style-type: none;
+        top: 49px;
+        font-size: 14px;
+        &_active{
+            display: block;
+        }
+        li{
+            margin-top: 25px;
+            cursor: pointer;
+            &:hover{
+                color: $color;
+            }
+            &:first-child{
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__category-point {
         display: flex;
         height: 27px;
         flex-direction: column;
-        margin-left: 47px;
-        margin-right: 41px;
-
+        padding-left: 47px;
+        padding-right: 41px;
+        cursor: pointer;
+        background-color: #fff;
+        border: none;
         span {
             background-color: #000;
             height: 3px;
@@ -207,9 +253,5 @@
         }
     }
 
-    &__category-stock {
-        font-size: 16px;
-        color: #D74444;
-        margin-left: 25px;
-    }
+
 }
