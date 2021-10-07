@@ -36,15 +36,61 @@ window.addEventListener('DOMContentLoaded', () => {
         catalogItem1 = document.querySelector('.catalog__item-1');
 
 
-    catalogName.forEach(function (item) {
-        item.addEventListener('click', function () {
+    catalogName.forEach(function (name) {
+        name.addEventListener('mouseover', function () {
             catalogItem1.classList.toggle('catalog__item-1_active');
         });
     });
 
 
 
-  
+    //слайдер карточка товара
+
+    $('.cart__carousel-item').slick({
+        speed: 1200,
+        adaptiveHeight: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.cart__carousel-items'
+      });
+      $('.cart__carousel-items').slick({
+        speed: 1200,
+        adaptiveHeight: true,
+        prevArrow: '<button type="button" class="prev"><img src="icons/arrow-left.svg"></button>',
+        nextArrow: '<button type="button" class="next"><img src="icons/arrow-right.svg"></button>',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.cart__carousel-item',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+      });
+                  
+
+
+
+    // const items = document.querySelectorAll('.catalog__item'),
+    //     catalogItem1 = document.querySelector('.catalog__item-1');
+    // for (const name of items) {
+    //     name.addEventListener('click', function () {
+    //         catalogItem1.classList.toggle('catalog__item-1_active');
+    //     });
+    // }
+
+    // let catalogItem = document.querySelectorAll('.catalog__item'),
+    //     catalogItem1 = document.querySelector('.catalog__item-1'),
+    //     catalogName = document.querySelector('.catalog__name');
+
+
+    // catalogName.addEventListener('click', function () {
+    //     catalogItem1.classList.toggle('catalog__item-1_active');
+    // });
+
+
+
+
 
     // for (i = 0, len = menuCategoryItem.length; i < len; i++) {
 

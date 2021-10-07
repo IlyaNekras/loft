@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Мебель</title>
+    <title>Карточка товара</title>
 </head>
 
 <body>
@@ -284,18 +284,99 @@
             </div>
         </div>
     </header>
-    <section class="carousel">
+
+
+    <div class="cart">
         <div class="container">
-            <h1 class="carousel__title">LOFT MEBEL</h1>
-            <p class="carousel__subtitle">Современная и удобная мебель в Анапе</p>
-            <button class="carousel__catalog-btn">смотреть каталог</button>
-            <div class="carousel__inner">
-                <img src="img/bg/bg1.jpg" alt="slider1">
-                <img src="img/bg/bg1.jpg" alt="slider2">
-                <img src="img/bg/bg1.jpg" alt="slider3">
+            <nav aria-label="Breadcrumb" class="breadcrumb">
+                <ul>
+                    <li><a href="#">Главная</a></li>/
+                    <li><a href="#">Контакты</a></li>/
+                    <li><a href="#">Мягкая мебель</a></li>/
+                    <li>Диваны</li>
+                </ul>
+            </nav>
+            <div class="cart__wrapper">
+                <div class="cart__carousel-box">
+                    <div class="cart__carousel-item">
+                        <div><img class="cart__carousel-img1" src="img/furniture/sova1.png" alt="slider"></div>
+                        <div><img class="cart__carousel-img1" src="img/furniture/sova2.png" alt="slider"></div>
+                        <div><img class="cart__carousel-img1" src="img/furniture/sova1.png" alt="slider"></div>
+                        <div><img class="cart__carousel-img1" src="img/furniture/sova2.png" alt="slider"></div>
+                        <div><img class="cart__carousel-img1" src="img/furniture/sova1.png" alt="slider"></div>
+                    </div>
+                    <div class="cart__carousel-items">
+                        <div><img class="cart__carousel-img" src="img/furniture/sova1.png" alt="slider"></div>
+                        <div><img class="cart__carousel-img" src="img/furniture/sova2.png" alt="slider"></div>
+                        <div><img class="cart__carousel-img" src="img/furniture/sova1.png" alt="slider"></div>
+                        <div><img class="cart__carousel-img" src="img/furniture/sova2.png" alt="slider"></div>
+                        <div><img class="cart__carousel-img" src="img/furniture/sova1.png" alt="slider"></div>
+                    </div>
+                </div>
+                <div class="cart__info">
+                    <div class="cart__grade">
+                        <img src="icons/blackStar.svg" alt="blackStar">
+                        <img src="icons/blackStar.svg" alt="blackStar">
+                        <img src="icons/blackStar.svg" alt="blackStar">
+                        <img src="icons/blackStar.svg" alt="blackStar">
+                        <img src="icons/greyStar.svg" alt="greyStar">
+                    </div>
+                    <div class="cart__name">Динс Velvet Yellow</div>
+                    <div class="cart__subname">Диваны</div>
+                    <div class="cart__box">
+                        <div class="cart__price">4 690₽</div>
+                        <button class="cart__btn">Купить</button>
+                        <a href="#" class="cart__add"><img src="icons/heart-icon.svg" alt="heart">
+                            <p>Добавить в желаемое</p>
+                        </a>
+                    </div>
+                    <div class="cart__character">
+
+                        <div class="cart__item">
+                            <p>Цвета</p>
+                            <div class="cart__colors">
+                                <div class="cart__color"><img src="icons/arrow-down.svg" alt="down"></div>
+                                <!-- <div class="cart__color"></div>
+                            <div class="cart__color"></div>
+                            <div class="cart__color"></div> -->
+                                
+                            </div>
+                        </div>
+
+                        <div class="cart__item">
+                            <p>Количество</p>
+                            <div class="cart__numbers">
+                                <div class="cart__number">1<img src="icons/arrow-down.svg" alt="down"></div>
+                                <!-- <div class="cart__number">2</div>
+                            <div class="cart__number">3</div>
+                            <div class="cart__number">4</div> -->
+                            </div>
+                        </div>
+
+                        <div class="cart__item">
+                            <div class="cart__sizes">
+                                <p>Размеры</p>
+                                <div class="cart__size">218 СМ x 95 СМ x 95 СМ<img src="icons/arrow-down.svg" alt="down"></div>
+                                <!-- <div class="cart__size">208 СМ x 90 СМ x 90 СМ</div>
+                            <div class="cart__size">198 СМ x 85 СМ x 85 СМ</div>
+                            <div class="cart__size">188 СМ x 80 СМ x 80 СМ</div> -->
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="cart__descr">
+                        <span>Описание</span>
+                        <p>Лаконичные линии и простые формы, безупречный стиль и индивидуальность – все это диван
+                            «Динс». Сдержанный скандинавский дизайн украсит любую современную обстановку. Элегантность,
+                            комфорт и функциональность, собранные воедино – «Динс» просто создан для размеренного отдыха
+                            в кругу семьи или компании друзей!</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+
     <section class="catalog">
         <div class="container">
             <h4>Хиты продаж</h4>
@@ -355,30 +436,20 @@
 
 
                 <div class="catalog__item">
-                    <img class="catalog__icon-percent" src="icons/vector.svg" alt="vector">
-                    <p class="catalog__text-percent">-25%</p>
                     <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                    <a href="#"><img class="catalog__img" src="img/furniture/sova1.png" alt="sova1"></a>
-                    <div class="catalog__name">Динс Velvet Yelldivw</div>
-                    <div class="catalog__subname">Диваны</div>
-                    <div class="catalog__price-box">
-                        <div class="catalog__price-new">28 490₽</div>
-                        <div class="catalog__price-old">37 990₽</div>
-                    </div>
+                    <a href="#"><img class="catalog__img" src="img/furniture/table.png" alt="table"></a>
+                    <div class="catalog__name">Тиффани Вудлайн Крем</div>
+                    <div class="catalog__subname">Письменные столы</div>
+                    <div class="catalog__price">10 990₽</div>
                 </div>
 
 
                 <div class="catalog__item-1">
-                    <img class="catalog__icon-percent" src="icons/vector.svg" alt="vector">
-                    <p class="catalog__text-percent">-25%</p>
                     <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                    <a href="#"><img class="catalog__img" src="img/furniture/sova1.png" alt="sova1"></a>
-                    <a href="#" class="catalog__name">Динс Velvet Yelldivw</a>
-                    <div class="catalog__subname">Диваны</div>
-                    <div class="catalog__price-box">
-                        <div class="catalog__price-new">28 490₽</div>
-                        <div class="catalog__price-old">37 990₽</div>
-                    </div>
+                    <a href="#"><img class="catalog__img" src="img/furniture/table.png" alt="table"></a>
+                    <div class="catalog__name">Тиффани Вудлайн Крем</div>
+                    <div class="catalog__subname">Письменные столы</div>
+                    <div class="catalog__price">10 990₽</div>
                     <div class="catalog__dimensions">
                         <h4>Размеры</h4>
                         <div class="catalog__dimensions-descr">
