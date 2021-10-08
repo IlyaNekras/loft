@@ -54,8 +54,8 @@ window.addEventListener('DOMContentLoaded', () => {
         arrows: false,
         fade: true,
         asNavFor: '.cart__carousel-items'
-      });
-      $('.cart__carousel-items').slick({
+    });
+    $('.cart__carousel-items').slick({
         speed: 1200,
         adaptiveHeight: true,
         prevArrow: '<button type="button" class="prev"><img src="icons/arrow-left.svg"></button>',
@@ -66,8 +66,26 @@ window.addEventListener('DOMContentLoaded', () => {
         dots: true,
         centerMode: true,
         focusOnSelect: true
-      });
-                  
+    });
+
+    //показ дополнительных цветов товара
+
+    let colorImg = document.querySelector('.cart__color-img'),
+        colorAct = document.querySelector('.cart__color');
+
+    colorImg.addEventListener('click', function () {
+        colorAct.classList.toggle('cart__color_active');
+    });
+
+
+    //показ количества товара
+
+    let numImg = document.querySelector('.cart__number-img'),
+        numAct = document.querySelector('.cart__number');
+
+    numImg.addEventListener('click', function () {
+        numAct.classList.toggle('cart__number_active');
+    });
 
 
 
