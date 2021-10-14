@@ -32,15 +32,42 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //catalog - рабочий не до конца
 
-    let catalogName = document.querySelectorAll('.catalog__name'),
-        catalogItem1 = document.querySelector('.catalog__item-1');
+    // let catalogItem = document.querySelectorAll('.catalog__item'),
+    //     catalogItem1 = document.querySelector('.catalog__item-1');
 
 
-    catalogName.forEach(function (name) {
-        name.addEventListener('mouseover', function () {
-            catalogItem1.classList.toggle('catalog__item-1_active');
+
+    // catalogItem.forEach(function (i) {
+
+    //     let catalogName = i.querySelector('.catalog__name');
+
+    //     catalogName.addEventListener('click', function () {
+    //         catalogItem1.classList.toggle('catalog__item-1_active');
+    //     });
+
+    // });
+
+
+    let catItem = document.querySelectorAll('.catalog__item'),
+        catItem1 = document.querySelector('.catalog__item-1');
+
+
+    catItem.forEach(function (el) {
+        el.addEventListener('click', function () {
+            catItem1.classList.toggle('catalog__item-1_active');
         });
     });
+
+
+    //     catalogItem1 = document.querySelector('.catalog__item-1');
+
+    // for (let i = 0; i < arrItems.length; i++) {
+    //     // let catalogItem = document.querySelector('.catalog__item');
+    //     arrItems[i].addEventListener('click', function () {
+    //         catalogItem1.classList.toggle('catalog__item-1_active');
+    //     });
+    // };
+
 
 
 
@@ -86,65 +113,6 @@ window.addEventListener('DOMContentLoaded', () => {
     numImg.addEventListener('click', function () {
         numAct.classList.toggle('cart__number_active');
     });
-
-
-
-    // const items = document.querySelectorAll('.catalog__item'),
-    //     catalogItem1 = document.querySelector('.catalog__item-1');
-    // for (const name of items) {
-    //     name.addEventListener('click', function () {
-    //         catalogItem1.classList.toggle('catalog__item-1_active');
-    //     });
-    // }
-
-    // let catalogItem = document.querySelectorAll('.catalog__item'),
-    //     catalogItem1 = document.querySelector('.catalog__item-1'),
-    //     catalogName = document.querySelector('.catalog__name');
-
-
-    // catalogName.addEventListener('click', function () {
-    //     catalogItem1.classList.toggle('catalog__item-1_active');
-    // });
-
-
-
-
-
-    // for (i = 0, len = menuCategoryItem.length; i < len; i++) {
-
-    //     menuCategoryItem.forEach(i, function () {
-    //         i.addEventListener('click', function () {
-    //             menuCategoryHover.style.display = 'block';
-
-    //         });
-    //     });
-    // }
-
-    // menuCategoryItem.addEventListener('click', function () {
-    //     menuCategoryHover.style.display = 'block';
-    // });
-    // };
-    // menuCategoryItem.forEach(item => {
-    //     item.addEventListener('click', () => {
-    //         menuCategoryHover.style.display = 'block';
-
-    //     });
-
-    // menuCategoryItem.addEventListener('click', function() {
-    //     menuCategoryHover.style.display = 'block';
-    // });
-
-
-    // [].forEach.call(like,function(el){
-    //     el.addEventListener('click', function (e) {...})
-    // });
-
-    // menuItem.forEach(item => {
-    //     item.addEventListener('click', () => {
-    //         hamburger.classList.toggle('hamburger_active');
-    //         menu.classList.toggle('menu_active');
-    //     })
-    // })
 
 
 

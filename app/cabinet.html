@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Мебель</title>
+    <title>Личный кабинет</title>
 </head>
 
 <body>
@@ -282,267 +282,99 @@
                 </div>
 
             </div>
+            <nav aria-label="Breadcrumb" class="breadcrumb">
+                <ul>
+                    <li><a href="#">Главная</a></li>/
+                    <li>Личный кабинет</li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <section class="carousel">
+
+    <section class="cabinet">
         <div class="container">
-            <h1 class="carousel__title">LOFT MEBEL</h1>
-            <p class="carousel__subtitle">Современная и удобная мебель в Анапе</p>
-            <button class="carousel__catalog-btn">смотреть каталог</button>
-            <div class="carousel__inner">
-                <img src="img/bg/bg1.jpg" alt="slider1">
-                <img src="img/bg/bg1.jpg" alt="slider2">
-                <img src="img/bg/bg1.jpg" alt="slider3">
+            <div class="cabinet__bonus">
+                <h3>Бонусная программа</h3>
+                <div class="cabinet__bonus-rules">
+                    <p>У вас 0 бонусных баллов</p>
+                    <a class="cabinet__bonus-rule" href="#">Правила бонусной программы</a>
+                </div>
+            </div>
+            <div class="cabinet__bonus-items">
+                <div class="cabinet__bonus-item">
+                    <img class="cabinet__bonus-item-img" src="icons/cashback.svg" alt="cashback">
+                    <p>Возвращаем до 7% на бонусный счет</p>
+                </div>
+                <div class="cabinet__bonus-item">
+                    <img class="cabinet__bonus-item-img" src="icons/rub.svg" alt="rub">
+                    <p>1 бонус = 1 рубль</p>
+                </div>
+                <div class="cabinet__bonus-item">
+                    <img class="cabinet__bonus-item-img" src="icons/present.svg" alt="present">
+                    <p>Оплачивайте бонусами до 20% от покупки</p>
+                </div>
+            </div>
+            <div class="cabinet__wrap">
+                <div class="cabinet__data">
+                    <h3>Личные данные</h3>
+                    <div class="cabinet__data-persone">
+                        <div class="cabinet__item">
+                            <div class="cabinet__name">
+                                <p class="cabinet__text">Имя</p>
+                                <input class="cabinet__input" type="text">
+                            </div>
+                            <div class="cabinet__surname">
+                                <p class="cabinet__text">Фамилия</p>
+                                <input class="cabinet__input" type="email">
+                            </div>
+                        </div>
+
+
+                        <div class="cabinet__item">
+                            <div class="cabinet__email">
+                                <p class="cabinet__text">E-mail</p>
+                                <input class="cabinet__input" type="text">
+                            </div>
+                            <div class="cabinet__phone">
+                                <p class="cabinet__text">Номер телефона</p>
+                                <input class="cabinet__input" type="tel">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="cabinet__city">
+                        <p class="cabinet__text">Город</p>
+                        <input class="cabinet__input" type="text">
+                    </div>
+                    <div class="cabinet__street">
+                        <p class="cabinet__text">Улица</p>
+                        <input class="cabinet__input" type="text">
+                    </div>
+                    <div class="cabinet__houses">
+                        <div class="cabinet__house">
+                            <p class="cabinet__text">Дом/Корпус</p>
+                            <input class="cabinet__input" type="text">
+                        </div>
+                        <div class="cabinet__apartment">
+                            <p class="cabinet__text">Квартира</p>
+                            <input class="cabinet__input" type="number">
+                        </div>
+                    </div>
+                    <button class="cabinet__btn">Изменить</button>
+                </div>
+                <div class="cabinet__orders">
+                    <h3>Мои заказы</h3>
+                </div>
             </div>
         </div>
     </section>
-    <section class="catalog">
-        <div class="container">
-            <h4>Хиты продаж</h4>
-            <div class="catalog__items">
-                <div class="catalog__item">
-                    <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                    <a href="#"><img class="catalog__img" src="img/furniture/chair1.png" alt="chair1"></a>
-                    <div class="catalog__name">Валенсия Beige</div>
-                    <div class="catalog__subname">Барные стулья</div>
-                    <div class="catalog__price">2 300₽</div>
-                    <div class="catalog__item-1">
-                        <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                        <a href="#"><img class="catalog__img" src="img/furniture/chair1.png" alt="chair1"></a>
-                        <div class="catalog__name">Валенсия Beige</div>
-                        <div class="catalog__subname">Барные стулья</div>
-                        <div class="catalog__price">2 300₽</div>
-                        <div class="catalog__dimensions">
-                            <h4>Размеры</h4>
-                            <div class="catalog__dimensions-descr">
-                                <p>ширина 43 см</p>
-                                <span>Х</span>
-                                <p>глубина 43 см</p>
-                                <span>Х</span>
-                                <p>высота 77 см</p>
-                            </div>
-                            <button class="catalog__btn">Добавить в корзину</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="catalog__item">
-                    <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                    <a href="#"><img class="catalog__img" src="img/furniture/chair2.png" alt="chair2"></a>
-                    <div class="catalog__name">Толикс-2 White Gdivoss</div>
-                    <div class="catalog__subname">Барные стулья</div>
-                    <div class="catalog__price">4 690₽</div>
-                    <div class="catalog__item-1">
-                        <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                        <a href="#"><img class="catalog__img" src="img/furniture/chair2.png" alt="chair2"></a>
-                        <div class="catalog__name">Толикс-2 White Gdivoss</div>
-                        <div class="catalog__subname">Барные стулья</div>
-                        <div class="catalog__price">4 690₽</div>
-                        <div class="catalog__dimensions">
-                            <h4>Размеры</h4>
-                            <div class="catalog__dimensions-descr">
-                                <p>ширина 43 см</p>
-                                <span>Х</span>
-                                <p>глубина 43 см</p>
-                                <span>Х</span>
-                                <p>высота 77 см</p>
-                            </div>
-                            <button class="catalog__btn">Добавить в корзину</button>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="catalog__item">
-                    <img class="catalog__icon-percent" src="icons/vector.svg" alt="vector">
-                    <p class="catalog__text-percent">-25%</p>
-                    <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                    <a href="#"><img class="catalog__img" src="img/furniture/sova1.png" alt="sova1"></a>
-                    <div class="catalog__name">Динс Velvet Yelldivw</div>
-                    <div class="catalog__subname">Диваны</div>
-                    <div class="catalog__price-box">
-                        <div class="catalog__price-new">28 490₽</div>
-                        <div class="catalog__price-old">37 990₽</div>
-                    </div>
-                    <div class="catalog__item-1">
-                        <img class="catalog__icon-percent" src="icons/vector.svg" alt="vector">
-                        <p class="catalog__text-percent">-25%</p>
-                        <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                        <a href="#"><img class="catalog__img" src="img/furniture/sova1.png" alt="sova1"></a>
-                        <div class="catalog__name">Динс Velvet Yelldivw</div>
-                        <div class="catalog__subname">Диваны</div>
-                        <div class="catalog__price-box">
-                            <div class="catalog__price-new">28 490₽</div>
-                            <div class="catalog__price-old">37 990₽</div>
-                        </div>
-                        <div class="catalog__dimensions">
-                            <h4>Размеры</h4>
-                            <div class="catalog__dimensions-descr">
-                                <p>ширина 43 см</p>
-                                <span>Х</span>
-                                <p>глубина 43 см</p>
-                                <span>Х</span>
-                                <p>высота 77 см</p>
-                            </div>
-                            <button class="catalog__btn">Добавить в корзину</button>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="catalog__item">
-                    <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                    <a href="#"><img class="catalog__img" src="img/furniture/sova2.png" alt="sova2"></a>
-                    <div class="catalog__name">Кускен Navy Bluediv</div>
-                    <div class="catalog__subname">Диваны</div>
-                    <div class="catalog__price">2 300₽</div>
-                    <div class="catalog__item-1">
-                        <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                        <a href="#"><img class="catalog__img" src="img/furniture/sova2.png" alt="sova2"></a>
-                        <div class="catalog__name">Кускен Navy Bluediv</div>
-                        <div class="catalog__subname">Диваны</div>
-                        <div class="catalog__price">2 300₽</div>
-                        <div class="catalog__dimensions">
-                            <h4>Размеры</h4>
-                            <div class="catalog__dimensions-descr">
-                                <p>ширина 43 см</p>
-                                <span>Х</span>
-                                <p>глубина 43 см</p>
-                                <span>Х</span>
-                                <p>высота 77 см</p>
-                            </div>
-                            <button class="catalog__btn">Добавить в корзину</button>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-                <div class="catalog__item">
-                    <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                    <a href="#"><img class="catalog__img" src="img/furniture/bed.png" alt="bed"></a>
-                    <div class="catalog__name">Шерона Barhat Grdivy</div>
-                    <div class="catalog__subname">Двухспальные кровати</div>
-                    <div class="catalog__price">21 990₽</div>
-                    <div class="catalog__item-1">
-                        <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                        <a href="#"><img class="catalog__img" src="img/furniture/bed.png" alt="bed"></a>
-                        <div class="catalog__name">Шерона Barhat Grdivy</div>
-                        <div class="catalog__subname">Двухспальные кровати</div>
-                        <div class="catalog__price">21 990₽</div>
-                        <div class="catalog__dimensions">
-                            <h4>Размеры</h4>
-                            <div class="catalog__dimensions-descr">
-                                <p>ширина 43 см</p>
-                                <span>Х</span>
-                                <p>глубина 43 см</p>
-                                <span>Х</span>
-                                <p>высота 77 см</p>
-                            </div>
-                            <button class="catalog__btn">Добавить в корзину</button>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-                <div class="catalog__item">
-                    <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                    <a href="#"><img class="catalog__img" src="img/furniture/buffet.png" alt="buffet"></a>
-                    <div class="catalog__name">Авиньон-1</div>
-                    <div class="catalog__subname">Буфеты</div>
-                    <div class="catalog__price">18 990₽</div>
-                    <div class="catalog__item-1">
-                        <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                        <a href="#"><img class="catalog__img" src="img/furniture/buffet.png" alt="buffet"></a>
-                        <div class="catalog__name">Авиньон-1</div>
-                        <div class="catalog__subname">Буфеты</div>
-                        <div class="catalog__price">18 990₽</div>
-                        <div class="catalog__dimensions">
-                            <h4>Размеры</h4>
-                            <div class="catalog__dimensions-descr">
-                                <p>ширина 43 см</p>
-                                <span>Х</span>
-                                <p>глубина 43 см</p>
-                                <span>Х</span>
-                                <p>высота 77 см</p>
-                            </div>
-                            <button class="catalog__btn">Добавить в корзину</button>
-                        </div>
-                    </div>
-                </div>
 
 
 
 
 
 
-                <div class="catalog__item">
-                    <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                    <a href="#"><img class="catalog__img" src="img/furniture/dresser1.png" alt="dresser1"></a>
-                    <div class="catalog__name">Стелла Дуб Соном</div>
-                    <div class="catalog__subname">Комоды</div>
-                    <div class="catalog__price">8 990₽</div>
-                    <div class="catalog__item-1">
-                        <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                        <a href="#"><img class="catalog__img" src="img/furniture/dresser1.png" alt="dresser1"></a>
-                        <div class="catalog__name">Стелла Дуб Соном</div>
-                        <div class="catalog__subname">Комоды</div>
-                        <div class="catalog__price">8 990₽</div>
-                        <div class="catalog__dimensions">
-                            <h4>Размеры</h4>
-                            <div class="catalog__dimensions-descr">
-                                <p>ширина 43 см</p>
-                                <span>Х</span>
-                                <p>глубина 43 см</p>
-                                <span>Х</span>
-                                <p>высота 77 см</p>
-                            </div>
-                            <button class="catalog__btn">Добавить в корзину</button>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="catalog__item">
-                    <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                    <a href="#"><img class="catalog__img" src="img/furniture/dresser2.png" alt="dresser2"></a>
-                    <div class="catalog__name">Равенна-1 Light</div>
-                    <div class="catalog__subname">Комоды</div>
-                    <div class="catalog__price">14 990₽</div>
-                    <div class="catalog__item-1">
-                        <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                        <a href="#"><img class="catalog__img" src="img/furniture/dresser2.png" alt="dresser2"></a>
-                        <div class="catalog__name">Равенна-1 Light</div>
-                        <div class="catalog__subname">Комоды</div>
-                        <div class="catalog__price">14 990₽</div>
-                        <div class="catalog__dimensions">
-                            <h4>Размеры</h4>
-                            <div class="catalog__dimensions-descr">
-                                <p>ширина 43 см</p>
-                                <span>Х</span>
-                                <p>глубина 43 см</p>
-                                <span>Х</span>
-                                <p>высота 77 см</p>
-                            </div>
-                            <button class="catalog__btn">Добавить в корзину</button>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-    </section>
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">

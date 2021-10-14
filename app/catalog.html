@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Мебель</title>
+    <title>Каталог</title>
 </head>
 
 <body>
@@ -284,89 +284,108 @@
             </div>
         </div>
     </header>
-    <section class="carousel">
+
+    <div class="catalog">
         <div class="container">
-            <h1 class="carousel__title">LOFT MEBEL</h1>
-            <p class="carousel__subtitle">Современная и удобная мебель в Анапе</p>
-            <button class="carousel__catalog-btn">смотреть каталог</button>
-            <div class="carousel__inner">
-                <img src="img/bg/bg1.jpg" alt="slider1">
-                <img src="img/bg/bg1.jpg" alt="slider2">
-                <img src="img/bg/bg1.jpg" alt="slider3">
-            </div>
-        </div>
-    </section>
-    <section class="catalog">
-        <div class="container">
-            <h4>Хиты продаж</h4>
-            <div class="catalog__items">
-                <div class="catalog__item">
-                    <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                    <a href="#"><img class="catalog__img" src="img/furniture/chair1.png" alt="chair1"></a>
-                    <div class="catalog__name">Валенсия Beige</div>
-                    <div class="catalog__subname">Барные стулья</div>
-                    <div class="catalog__price">2 300₽</div>
-                    <div class="catalog__item-1">
+            <nav aria-label="Breadcrumb" class="breadcrumb">
+                <ul>
+                    <li><a href="#">Главная</a></li>/
+                    <li><a href="#">Контакты</a></li>/
+                    <li><a href="#">Мягкая мебель</a></li>/
+                    <li>Диваны</li>
+                </ul>
+            </nav>
+            <div class="catalog__wrap">
+                <div class="catalog__filters">
+                    <p>Раздел</p>
+                    <form><select size="1" name="mebel">
+                            <option label="Кухни" value="1"></option>
+                            <option label="Спальни" value="2"></option>
+                            <option label="Гостинные" value="3" selected></option>
+                            <option label="Прихожие" value="4"></option>
+                            <option label="Офисная мебель" value="5"></option>
+                            <option label="Детская" value="6"></option>
+                        </select>
+                        <select size="1" name="mebel">
+                            <option label="Мягкая мебель" value="1" selected></option>
+                            <option label="Корпусная мебель" value="2"></option>
+                            <option label="Мебель" value="3"></option>
+                            <option label="Полки" value="4"></option>
+                            <option label="Шкафы" value="5"></option>
+                            <option label="Тумбы" value="6"></option>
+                        </select>
+                        <select size="1" name="mebel">
+                            <option label="Диваны" value="1" selected></option>
+                            <option label="Кресла" value="2"></option>
+                            <option label="Кровати" value="3"></option>
+                            <option label="Матрасы" value="4"></option>
+                            <option label="Пуфы" value="5"></option>
+                            <option label="Сиденья" value="6"></option>
+                        </select></form>
+                    <p>Цена</p>
+                    <div class="catalog__slide">
+                        <input type="range" min="2" max="150000" value="50" class="catalog__slider" id="Range">
+                    </div>
+
+
+                </div>
+
+                <div class="catalog__items">
+                    <div class="catalog__item">
                         <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
                         <a href="#"><img class="catalog__img" src="img/furniture/chair1.png" alt="chair1"></a>
                         <div class="catalog__name">Валенсия Beige</div>
                         <div class="catalog__subname">Барные стулья</div>
                         <div class="catalog__price">2 300₽</div>
-                        <div class="catalog__dimensions">
-                            <h4>Размеры</h4>
-                            <div class="catalog__dimensions-descr">
-                                <p>ширина 43 см</p>
-                                <span>Х</span>
-                                <p>глубина 43 см</p>
-                                <span>Х</span>
-                                <p>высота 77 см</p>
+                        <div class="catalog__item-1">
+                            <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
+                            <a href="#"><img class="catalog__img" src="img/furniture/chair1.png" alt="chair1"></a>
+                            <div class="catalog__name">Валенсия Beige</div>
+                            <div class="catalog__subname">Барные стулья</div>
+                            <div class="catalog__price">2 300₽</div>
+                            <div class="catalog__dimensions">
+                                <h4>Размеры</h4>
+                                <div class="catalog__dimensions-descr">
+                                    <p>ширина 43 см</p>
+                                    <span>Х</span>
+                                    <p>глубина 43 см</p>
+                                    <span>Х</span>
+                                    <p>высота 77 см</p>
+                                </div>
+                                <button class="catalog__btn">Добавить в корзину</button>
                             </div>
-                            <button class="catalog__btn">Добавить в корзину</button>
                         </div>
                     </div>
-                </div>
 
 
-                <div class="catalog__item">
-                    <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                    <a href="#"><img class="catalog__img" src="img/furniture/chair2.png" alt="chair2"></a>
-                    <div class="catalog__name">Толикс-2 White Gdivoss</div>
-                    <div class="catalog__subname">Барные стулья</div>
-                    <div class="catalog__price">4 690₽</div>
-                    <div class="catalog__item-1">
+                    <div class="catalog__item">
                         <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
                         <a href="#"><img class="catalog__img" src="img/furniture/chair2.png" alt="chair2"></a>
                         <div class="catalog__name">Толикс-2 White Gdivoss</div>
                         <div class="catalog__subname">Барные стулья</div>
                         <div class="catalog__price">4 690₽</div>
-                        <div class="catalog__dimensions">
-                            <h4>Размеры</h4>
-                            <div class="catalog__dimensions-descr">
-                                <p>ширина 43 см</p>
-                                <span>Х</span>
-                                <p>глубина 43 см</p>
-                                <span>Х</span>
-                                <p>высота 77 см</p>
+                        <div class="catalog__item-1">
+                            <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
+                            <a href="#"><img class="catalog__img" src="img/furniture/chair2.png" alt="chair2"></a>
+                            <div class="catalog__name">Толикс-2 White Gdivoss</div>
+                            <div class="catalog__subname">Барные стулья</div>
+                            <div class="catalog__price">4 690₽</div>
+                            <div class="catalog__dimensions">
+                                <h4>Размеры</h4>
+                                <div class="catalog__dimensions-descr">
+                                    <p>ширина 43 см</p>
+                                    <span>Х</span>
+                                    <p>глубина 43 см</p>
+                                    <span>Х</span>
+                                    <p>высота 77 см</p>
+                                </div>
+                                <button class="catalog__btn">Добавить в корзину</button>
                             </div>
-                            <button class="catalog__btn">Добавить в корзину</button>
                         </div>
                     </div>
-                </div>
 
 
-
-                <div class="catalog__item">
-                    <img class="catalog__icon-percent" src="icons/vector.svg" alt="vector">
-                    <p class="catalog__text-percent">-25%</p>
-                    <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                    <a href="#"><img class="catalog__img" src="img/furniture/sova1.png" alt="sova1"></a>
-                    <div class="catalog__name">Динс Velvet Yelldivw</div>
-                    <div class="catalog__subname">Диваны</div>
-                    <div class="catalog__price-box">
-                        <div class="catalog__price-new">28 490₽</div>
-                        <div class="catalog__price-old">37 990₽</div>
-                    </div>
-                    <div class="catalog__item-1">
+                    <div class="catalog__item">
                         <img class="catalog__icon-percent" src="icons/vector.svg" alt="vector">
                         <p class="catalog__text-percent">-25%</p>
                         <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
@@ -377,227 +396,225 @@
                             <div class="catalog__price-new">28 490₽</div>
                             <div class="catalog__price-old">37 990₽</div>
                         </div>
-                        <div class="catalog__dimensions">
-                            <h4>Размеры</h4>
-                            <div class="catalog__dimensions-descr">
-                                <p>ширина 43 см</p>
-                                <span>Х</span>
-                                <p>глубина 43 см</p>
-                                <span>Х</span>
-                                <p>высота 77 см</p>
+                        <div class="catalog__item-1">
+                            <img class="catalog__icon-percent" src="icons/vector.svg" alt="vector">
+                            <p class="catalog__text-percent">-25%</p>
+                            <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
+                            <a href="#"><img class="catalog__img" src="img/furniture/sova1.png" alt="sova1"></a>
+                            <div class="catalog__name">Динс Velvet Yelldivw</div>
+                            <div class="catalog__subname">Диваны</div>
+                            <div class="catalog__price-box">
+                                <div class="catalog__price-new">28 490₽</div>
+                                <div class="catalog__price-old">37 990₽</div>
                             </div>
-                            <button class="catalog__btn">Добавить в корзину</button>
+                            <div class="catalog__dimensions">
+                                <h4>Размеры</h4>
+                                <div class="catalog__dimensions-descr">
+                                    <p>ширина 43 см</p>
+                                    <span>Х</span>
+                                    <p>глубина 43 см</p>
+                                    <span>Х</span>
+                                    <p>высота 77 см</p>
+                                </div>
+                                <button class="catalog__btn">Добавить в корзину</button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
 
-
-
-                <div class="catalog__item">
-                    <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                    <a href="#"><img class="catalog__img" src="img/furniture/sova2.png" alt="sova2"></a>
-                    <div class="catalog__name">Кускен Navy Bluediv</div>
-                    <div class="catalog__subname">Диваны</div>
-                    <div class="catalog__price">2 300₽</div>
-                    <div class="catalog__item-1">
+                    <div class="catalog__item">
                         <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
                         <a href="#"><img class="catalog__img" src="img/furniture/sova2.png" alt="sova2"></a>
                         <div class="catalog__name">Кускен Navy Bluediv</div>
                         <div class="catalog__subname">Диваны</div>
                         <div class="catalog__price">2 300₽</div>
-                        <div class="catalog__dimensions">
-                            <h4>Размеры</h4>
-                            <div class="catalog__dimensions-descr">
-                                <p>ширина 43 см</p>
-                                <span>Х</span>
-                                <p>глубина 43 см</p>
-                                <span>Х</span>
-                                <p>высота 77 см</p>
+                        <div class="catalog__item-1">
+                            <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
+                            <a href="#"><img class="catalog__img" src="img/furniture/sova2.png" alt="sova2"></a>
+                            <div class="catalog__name">Кускен Navy Bluediv</div>
+                            <div class="catalog__subname">Диваны</div>
+                            <div class="catalog__price">2 300₽</div>
+                            <div class="catalog__dimensions">
+                                <h4>Размеры</h4>
+                                <div class="catalog__dimensions-descr">
+                                    <p>ширина 43 см</p>
+                                    <span>Х</span>
+                                    <p>глубина 43 см</p>
+                                    <span>Х</span>
+                                    <p>высота 77 см</p>
+                                </div>
+                                <button class="catalog__btn">Добавить в корзину</button>
                             </div>
-                            <button class="catalog__btn">Добавить в корзину</button>
                         </div>
                     </div>
-                </div>
 
 
-
-
-
-                <div class="catalog__item">
-                    <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                    <a href="#"><img class="catalog__img" src="img/furniture/bed.png" alt="bed"></a>
-                    <div class="catalog__name">Шерона Barhat Grdivy</div>
-                    <div class="catalog__subname">Двухспальные кровати</div>
-                    <div class="catalog__price">21 990₽</div>
-                    <div class="catalog__item-1">
+                    <div class="catalog__item">
                         <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
                         <a href="#"><img class="catalog__img" src="img/furniture/bed.png" alt="bed"></a>
                         <div class="catalog__name">Шерона Barhat Grdivy</div>
                         <div class="catalog__subname">Двухспальные кровати</div>
                         <div class="catalog__price">21 990₽</div>
-                        <div class="catalog__dimensions">
-                            <h4>Размеры</h4>
-                            <div class="catalog__dimensions-descr">
-                                <p>ширина 43 см</p>
-                                <span>Х</span>
-                                <p>глубина 43 см</p>
-                                <span>Х</span>
-                                <p>высота 77 см</p>
+                        <div class="catalog__item-1">
+                            <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
+                            <a href="#"><img class="catalog__img" src="img/furniture/bed.png" alt="bed"></a>
+                            <div class="catalog__name">Шерона Barhat Grdivy</div>
+                            <div class="catalog__subname">Двухспальные кровати</div>
+                            <div class="catalog__price">21 990₽</div>
+                            <div class="catalog__dimensions">
+                                <h4>Размеры</h4>
+                                <div class="catalog__dimensions-descr">
+                                    <p>ширина 43 см</p>
+                                    <span>Х</span>
+                                    <p>глубина 43 см</p>
+                                    <span>Х</span>
+                                    <p>высота 77 см</p>
+                                </div>
+                                <button class="catalog__btn">Добавить в корзину</button>
                             </div>
-                            <button class="catalog__btn">Добавить в корзину</button>
                         </div>
                     </div>
-                </div>
 
 
-
-
-
-                <div class="catalog__item">
-                    <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                    <a href="#"><img class="catalog__img" src="img/furniture/buffet.png" alt="buffet"></a>
-                    <div class="catalog__name">Авиньон-1</div>
-                    <div class="catalog__subname">Буфеты</div>
-                    <div class="catalog__price">18 990₽</div>
-                    <div class="catalog__item-1">
+                    <div class="catalog__item">
                         <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
                         <a href="#"><img class="catalog__img" src="img/furniture/buffet.png" alt="buffet"></a>
                         <div class="catalog__name">Авиньон-1</div>
                         <div class="catalog__subname">Буфеты</div>
                         <div class="catalog__price">18 990₽</div>
-                        <div class="catalog__dimensions">
-                            <h4>Размеры</h4>
-                            <div class="catalog__dimensions-descr">
-                                <p>ширина 43 см</p>
-                                <span>Х</span>
-                                <p>глубина 43 см</p>
-                                <span>Х</span>
-                                <p>высота 77 см</p>
+                        <div class="catalog__item-1">
+                            <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
+                            <a href="#"><img class="catalog__img" src="img/furniture/buffet.png" alt="buffet"></a>
+                            <div class="catalog__name">Авиньон-1</div>
+                            <div class="catalog__subname">Буфеты</div>
+                            <div class="catalog__price">18 990₽</div>
+                            <div class="catalog__dimensions">
+                                <h4>Размеры</h4>
+                                <div class="catalog__dimensions-descr">
+                                    <p>ширина 43 см</p>
+                                    <span>Х</span>
+                                    <p>глубина 43 см</p>
+                                    <span>Х</span>
+                                    <p>высота 77 см</p>
+                                </div>
+                                <button class="catalog__btn">Добавить в корзину</button>
                             </div>
-                            <button class="catalog__btn">Добавить в корзину</button>
                         </div>
                     </div>
-                </div>
 
 
-
-
-
-
-                <div class="catalog__item">
-                    <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                    <a href="#"><img class="catalog__img" src="img/furniture/dresser1.png" alt="dresser1"></a>
-                    <div class="catalog__name">Стелла Дуб Соном</div>
-                    <div class="catalog__subname">Комоды</div>
-                    <div class="catalog__price">8 990₽</div>
-                    <div class="catalog__item-1">
+                    <div class="catalog__item">
                         <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
                         <a href="#"><img class="catalog__img" src="img/furniture/dresser1.png" alt="dresser1"></a>
                         <div class="catalog__name">Стелла Дуб Соном</div>
                         <div class="catalog__subname">Комоды</div>
                         <div class="catalog__price">8 990₽</div>
-                        <div class="catalog__dimensions">
-                            <h4>Размеры</h4>
-                            <div class="catalog__dimensions-descr">
-                                <p>ширина 43 см</p>
-                                <span>Х</span>
-                                <p>глубина 43 см</p>
-                                <span>Х</span>
-                                <p>высота 77 см</p>
+                        <div class="catalog__item-1">
+                            <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
+                            <a href="#"><img class="catalog__img" src="img/furniture/dresser1.png" alt="dresser1"></a>
+                            <div class="catalog__name">Стелла Дуб Соном</div>
+                            <div class="catalog__subname">Комоды</div>
+                            <div class="catalog__price">8 990₽</div>
+                            <div class="catalog__dimensions">
+                                <h4>Размеры</h4>
+                                <div class="catalog__dimensions-descr">
+                                    <p>ширина 43 см</p>
+                                    <span>Х</span>
+                                    <p>глубина 43 см</p>
+                                    <span>Х</span>
+                                    <p>высота 77 см</p>
+                                </div>
+                                <button class="catalog__btn">Добавить в корзину</button>
                             </div>
-                            <button class="catalog__btn">Добавить в корзину</button>
                         </div>
                     </div>
-                </div>
 
 
-
-
-                <div class="catalog__item">
-                    <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
-                    <a href="#"><img class="catalog__img" src="img/furniture/dresser2.png" alt="dresser2"></a>
-                    <div class="catalog__name">Равенна-1 Light</div>
-                    <div class="catalog__subname">Комоды</div>
-                    <div class="catalog__price">14 990₽</div>
-                    <div class="catalog__item-1">
+                    <div class="catalog__item">
                         <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
                         <a href="#"><img class="catalog__img" src="img/furniture/dresser2.png" alt="dresser2"></a>
                         <div class="catalog__name">Равенна-1 Light</div>
                         <div class="catalog__subname">Комоды</div>
                         <div class="catalog__price">14 990₽</div>
-                        <div class="catalog__dimensions">
-                            <h4>Размеры</h4>
-                            <div class="catalog__dimensions-descr">
-                                <p>ширина 43 см</p>
-                                <span>Х</span>
-                                <p>глубина 43 см</p>
-                                <span>Х</span>
-                                <p>высота 77 см</p>
+                        <div class="catalog__item-1">
+                            <img class="catalog__icon" src="icons/heart-icon.svg" alt="heart">
+                            <a href="#"><img class="catalog__img" src="img/furniture/dresser2.png" alt="dresser2"></a>
+                            <div class="catalog__name">Равенна-1 Light</div>
+                            <div class="catalog__subname">Комоды</div>
+                            <div class="catalog__price">14 990₽</div>
+                            <div class="catalog__dimensions">
+                                <h4>Размеры</h4>
+                                <div class="catalog__dimensions-descr">
+                                    <p>ширина 43 см</p>
+                                    <span>Х</span>
+                                    <p>глубина 43 см</p>
+                                    <span>Х</span>
+                                    <p>высота 77 см</p>
+                                </div>
+                                <button class="catalog__btn">Добавить в корзину</button>
                             </div>
-                            <button class="catalog__btn">Добавить в корзину</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            </section>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__wrapper">
+                        <div>
+                            <h3>Навигация</h3>
+                            <div class="footer__navigation">
+                                <div>
+                                    <a href="#">Кухни</a>
+                                    <a href="#">Спальни</a>
+                                    <a href="#">Гостинные</a>
+                                </div>
+                                <div>
+                                    <a href="#">Прихожие</a>
+                                    <a href="#">Офисная мебель</a>
+                                    <a href="#">Детская</a>
+                                </div>
+                                <div>
+                                    <a class="" href="#">Шкафы</a>
+                                    <a class="" href="#">Матрасы</a>
+                                    <a class="" href="#">Мягкая мебель</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="footer__address">
+                                <h3>LM</h3>
+                                <p>г. Анапа, Анапское шоссе,
+                                    <br> 30 Ж/К Черное море</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="footer__contacts-stock">
+                            <a href="#"><span>Акция</span></a>
+                            <a href="#">Новинки</a>
+                        </div>
+                        <div class="footer__contacts-social">
+                            <a class="footer__contacts-phone" href="tel:+79648999119">
+                                <img src="icons/phone-icon.svg" alt="phone">
+                                <p>8 (964) 89 99 119</p>
+                            </a>
+                            <a class="footer__contacts-inst" href="#">
+                                <img src="icons/instagram-icons.svg" alt="instagram">
+                                <p>instagram</p>
+                            </a>
+                            <a class="footer__contacts-mail" href="#">
+                                <img src="icons/mail-icons.svg" alt="mail">
+                                <p>mebel_loft_anapa@mail.ru</p>
+                            </a>
                         </div>
                     </div>
                 </div>
+            </footer>
 
-
-            </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-                <div>
-                    <h3>Навигация</h3>
-                    <div class="footer__navigation">
-                        <div>
-                            <a href="#">Кухни</a>
-                            <a href="#">Спальни</a>
-                            <a href="#">Гостинные</a>
-                        </div>
-                        <div>
-                            <a href="#">Прихожие</a>
-                            <a href="#">Офисная мебель</a>
-                            <a href="#">Детская</a>
-                        </div>
-                        <div>
-                            <a class="" href="#">Шкафы</a>
-                            <a class="" href="#">Матрасы</a>
-                            <a class="" href="#">Мягкая мебель</a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="footer__address">
-                        <h3>LM</h3>
-                        <p>г. Анапа, Анапское шоссе,
-                            <br> 30 Ж/К Черное море</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__contacts">
-                <div class="footer__contacts-stock">
-                    <a href="#"><span>Акция</span></a>
-                    <a href="#">Новинки</a>
-                </div>
-                <div class="footer__contacts-social">
-                    <a class="footer__contacts-phone" href="tel:+79648999119">
-                        <img src="icons/phone-icon.svg" alt="phone">
-                        <p>8 (964) 89 99 119</p>
-                    </a>
-                    <a class="footer__contacts-inst" href="#">
-                        <img src="icons/instagram-icons.svg" alt="instagram">
-                        <p>instagram</p>
-                    </a>
-                    <a class="footer__contacts-mail" href="#">
-                        <img src="icons/mail-icons.svg" alt="mail">
-                        <p>mebel_loft_anapa@mail.ru</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/slick.min.js""></script>
+            <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+            <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            <script src="js/slick.min.js""></script>
     <script src=" js/main.js"> </script> </body> </html>
