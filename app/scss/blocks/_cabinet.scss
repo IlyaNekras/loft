@@ -1,5 +1,5 @@
 .cabinet {
-    padding: 10px 10px 30px;
+    padding: 10px 10px 170px;
 
     &__bonus {
         display: flex;
@@ -62,6 +62,7 @@
     }
 
     &__orders {
+        position: relative;
         width: 50%;
     }
 
@@ -99,10 +100,12 @@
         width: 100%;
         height: 38px;
         padding: 0 12px;
-        outline: none;
         background: #FCFCFC;
         box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.07);
         border: none;
+        font-weight: 400;
+        font-size: 12px;
+        color: #686868;
     }
 
     &__data-adress {
@@ -153,5 +156,75 @@
         border: none;
         cursor: pointer;
         color: #fff;
+    }
+
+    &__table {
+        margin-top: 30px;
+        margin-bottom: 32px;
+    }
+
+    &__table,
+    tr,
+    td,
+    th {
+        border: 1px solid #F3F3F3;
+        border-collapse: collapse;
+        text-align: center;
+        font-weight: 400;
+        font-size: 12px;
+        color: #686868;
+    }
+
+    th {
+        padding: 10px;
+        width: 88px;
+        height: 40px;
+
+        &:first-child {
+            text-align: left;
+            padding-left: 15px;
+        }
+    }
+
+    &__col-name {
+        padding: 15px;
+        width: 346px;
+        height: 90px;
+        color: $main-color !important;
+    }
+
+    &__col-price {
+        width: 66px;
+        padding: 10px;
+    }
+
+    &__col-date,
+    &__col-status {
+        width: 88px;
+        padding: 10px;
+    }
+
+    &__str-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &__item-img {
+        width: 53px;
+        height: 40px;
+    }
+
+    &__item-name {
+        margin-left: 16px;
+    }
+
+    &__link {
+        position: absolute;
+        font-weight: 400;
+        font-size: 12px;
+        color: $color;
+        bottom: 0;
+        right: 0;
     }
 }
