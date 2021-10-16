@@ -10,6 +10,7 @@
 
     &__box {
         display: flex;
+        margin-bottom: 50px;
     }
 
     &__form {
@@ -69,6 +70,7 @@
         font-size: 13px;
         cursor: pointer;
     }
+
     &__btn-submit {
         background-color: $color;
         width: 106px;

@@ -19,56 +19,27 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //показать/скрыть элементы категорий
 
-    let btnPoint = document.querySelector('.menu__category-point'),
-        listHidden = document.querySelector('.menu__category-list');
+    let listHidden = document.querySelector('.menu__category-list'),
+        liItem = document.querySelectorAll('.menu__category-li');
+
+    document.addEventListener('click', menu);
+
+    function menu(event) {
+        if(event.target.closest('.menu__category-point')) {
+            listHidden.classList.toggle('menu__category-list_active');
+        }
+        if(!event.target.closest('.menu__category-point')) {
+            listHidden.classList.remove('menu__category-list_active');
+        }
+    }
 
 
-    btnPoint.addEventListener('click', function () {
-        listHidden.classList.toggle('menu__category-list_active');
-    });
-
-
-
-
-    //catalog - рабочий не до конца
-
-    // let catalogItem = document.querySelectorAll('.catalog__item'),
-    //     catalogItem1 = document.querySelector('.catalog__item-1');
-
-
-
-    // catalogItem.forEach(function (i) {
-
-    //     let catalogName = i.querySelector('.catalog__name');
-
-    //     catalogName.addEventListener('click', function () {
-    //         catalogItem1.classList.toggle('catalog__item-1_active');
-    //     });
-
-    // });
-
-
-    let catItem = document.querySelectorAll('.catalog__item'),
-        catItem1 = document.querySelector('.catalog__item-1');
-
-
-    catItem.forEach(function (el) {
+    liItem.forEach(function (el) {
         el.addEventListener('click', function () {
-            catItem1.classList.toggle('catalog__item-1_active');
+            listHidden.classList.remove('menu__category-list_active');
         });
+
     });
-
-
-    //     catalogItem1 = document.querySelector('.catalog__item-1');
-
-    // for (let i = 0; i < arrItems.length; i++) {
-    //     // let catalogItem = document.querySelector('.catalog__item');
-    //     arrItems[i].addEventListener('click', function () {
-    //         catalogItem1.classList.toggle('catalog__item-1_active');
-    //     });
-    // };
-
-
 
 
     //слайдер карточка товара

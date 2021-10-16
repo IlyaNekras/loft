@@ -1,4 +1,5 @@
 .catalog {
+    padding: 20px 10px 70px;
     position: relative;
 
     &__wrap {
@@ -33,7 +34,7 @@
             font-size: 14px;
             color: $main-color;
             border: none;
-
+            cursor: pointer;
             &:last-child {
                 margin-bottom: 10px;
             }
@@ -63,22 +64,26 @@
         margin-top: 35px;
         padding: 0 20px 32px;
         width: 263px;
+        &-1 {
+            opacity: 0;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0 20px 32px;
+            width: 263px;
+            color: $main-color;
+            background-color: #fff;
+            z-index: 9;
+            box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.11);
 
-    }
+        }
 
-    &__item-1 {
-        opacity: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 0 20px 32px;
-        width: 263px;
-        color: $main-color;
-        background-color: #fff;
-        z-index: 9;
-        box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.11);
-        &:hover{
-            opacity: 1;
+        &:hover {
+            .catalog__item-1 {
+                display: block;
+                opacity: 1;
+            }
         }
     }
 
@@ -107,7 +112,7 @@
     }
 
     &__name {
-        margin-top: 54px;
+        margin-top: 50px;
         font-size: 16px;
         font-weight: 700;
         color: $main-color;
@@ -159,6 +164,8 @@
         align-items: center;
         font-size: 9px;
         margin-bottom: 17px;
+        text-transform: uppercase;
+        line-height: 2;
     }
 
     &__dimensions-descr span {
