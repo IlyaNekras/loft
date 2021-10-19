@@ -15,21 +15,19 @@
         <div class="container">
             <div class="menu__wrapper">
                 <div class="menu__logo">
-                    <a href="#"><img class="menu__logo" src="icons/logo.svg" alt="logo"></a>
+                    <a href="http://localhost:3000/"><img class="menu__logo" src="icons/logo.svg" alt="logo"></a>
                 </div>
                 <nav>
                     <ul class="menu__items">
-                        <li class="menu__item"><a href="#">Главная</a></li>
-                        <li class="menu__item"><a href="#">О нас</a></li>
-                        <li class="menu__item"><a href="#">Контакты</a></li>
+                        <li class="menu__item"><a href="http://localhost:3000/">Главная</a></li>
+                        <li class="menu__item"><a href="http://127.0.0.1:5500/app/about.html">О нас</a></li>
+                        <li class="menu__item"><a href="http://127.0.0.1:5500/app/contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
 
                 <div class="menu__search">
-                    <img class="menu__search-icon" src="icons/search-icon.svg" alt="search-icon">
-                    <form> <input class="menu__search-area" placeholder="Поиск" style="padding: 0 20px 0 40px;"
-                            type="text">
-                    </form>
+                    <img class="menu__search-icon" src="icons/search-icon.svg" alt="search-icon"><input
+                        class="menu__search-area" placeholder="Поиск" style="padding: 0 20px 0 40px;" type="text">
                 </div>
 
                 <div class="menu__phone">
@@ -41,12 +39,15 @@
                     <a class="menu__delivery-link" href="#">Доставка</a>
                 </div>
                 <div class="menu__icons">
-                    <a class="menu__icons-chosen" href=""><img src="icons/heart-icon.svg" alt="heart"></a>
-                    <a class="menu__icons-bag" href="">
-                        <img src="icons/bag-icon.svg" alt="bag">
-                        <span></span>
+                    <a class="menu__icons-chosen" href="#">
+                        <img src="icons/heart-icon.svg" alt="heart">
                     </a>
-                    <a class="menu__icons-profile" href=""><img src="icons/profile-icon.svg" alt="profile"></a>
+                    <a class="menu__icons-bag" href="http://127.0.0.1:5500/app/basket.html">
+                        <img src="icons/bag-icon.svg" alt="bag">
+                    </a>
+                    <a class="menu__icons-profile" href="http://127.0.0.1:5500/app/cabinet.html">
+                        <img src="icons/profile-icon.svg" alt="profile">
+                    </a>
                 </div>
             </div>
             <div class="menu__categories">
@@ -286,7 +287,7 @@
             </div>
             <nav aria-label="Breadcrumb" class="breadcrumb">
                 <ul>
-                    <li><a href="#">Главная</a></li>/
+                    <li><a href="http://localhost:3000/">Главная</a></li>/
                     <li>Личный кабинет</li>
                 </ul>
             </nav>
@@ -317,17 +318,17 @@
                 </div>
             </div>
             <div class="cabinet__wrap">
-                <div class="cabinet__data">
+                <form class="cabinet__data">
                     <h3>Личные данные</h3>
                     <div class="cabinet__data-persone">
                         <div class="cabinet__item">
                             <div class="cabinet__name">
                                 <p class="cabinet__text">Имя</p>
-                                <form> <input class="cabinet__input" type="text"></form>
+                                <input class="cabinet__input" type="text">
                             </div>
                             <div class="cabinet__surname">
                                 <p class="cabinet__text">Фамилия</p>
-                                <form><input class="cabinet__input" type="email"></form>
+                                <input class="cabinet__input" type="email">
                             </div>
                         </div>
 
@@ -335,11 +336,11 @@
                         <div class="cabinet__item">
                             <div class="cabinet__email">
                                 <p class="cabinet__text">E-mail</p>
-                                <form><input class="cabinet__input" type="text"></form>
+                                <input class="cabinet__input" type="text">
                             </div>
                             <div class="cabinet__phone">
                                 <p class="cabinet__text">Номер телефона</p>
-                                <form> <input class="cabinet__input" type="tel"></form>
+                                <input class="cabinet__input" type="tel">
                             </div>
                         </div>
                     </div>
@@ -347,24 +348,24 @@
 
                     <div class="cabinet__city">
                         <p class="cabinet__text">Город</p>
-                        <form> <input class="cabinet__input" type="text"></form>
+                        <input class="cabinet__input" type="text">
                     </div>
                     <div class="cabinet__street">
                         <p class="cabinet__text">Улица</p>
-                        <form> <input class="cabinet__input" type="text"></form>
+                        <input class="cabinet__input" type="text">
                     </div>
                     <div class="cabinet__houses">
                         <div class="cabinet__house">
                             <p class="cabinet__text">Дом/Корпус</p>
-                            <form> <input class="cabinet__input" type="text"></form>
+                            <input class="cabinet__input" type="text">
                         </div>
                         <div class="cabinet__apartment">
                             <p class="cabinet__text">Квартира</p>
-                            <form><input class="cabinet__input" type="number"></form>
+                            <input class="cabinet__input" type="number">
                         </div>
                     </div>
                     <button class="cabinet__btn">Изменить</button>
-                </div>
+                </form>
                 <div class="cabinet__orders">
                     <h3>Мои заказы</h3>
                     <table class="cabinet__table">

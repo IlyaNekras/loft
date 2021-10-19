@@ -1,22 +1,26 @@
-body{
-    min-height: 470px;
+body {
+    box-sizing: border-box;
 }
+
 * {
     font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.container{
-    display: block;
+
+.container {
     position: relative;
-    max-width: 1140px;
+    max-width: 1170px;
     margin: 0 auto;
+    padding: 0 15px;
 }
-a{
+
+a {
     color: #414141;
+    display: inline-block;
     text-decoration: none;
 }
+
 @import 'base/variables';
 
 

@@ -1,5 +1,5 @@
 .catalog {
-    padding: 20px 10px 70px;
+    padding: 20px 0 70px;
     position: relative;
 
     &__wrap {
@@ -65,7 +65,6 @@
         padding: 0 20px 32px;
         width: 263px;
         &-1 {
-            opacity: 0;
             display: none;
             position: absolute;
             top: 0;
@@ -82,7 +81,6 @@
         &:hover {
             .catalog__item-1 {
                 display: block;
-                opacity: 1;
             }
         }
     }
@@ -92,6 +90,7 @@
         position: absolute;
         top: 21px;
         right: 15.5px;
+        cursor: pointer;
     }
 
     &__text-percent {
@@ -116,7 +115,9 @@
         font-size: 16px;
         font-weight: 700;
         color: $main-color;
-        cursor: pointer;
+        &:hover{
+            color: #000;
+        }
     }
 
     &__subname {
