@@ -2,8 +2,8 @@ window.addEventListener('DOMContentLoaded', () => {
     $('.carousel__inner').slick({
         speed: 1200,
         adaptiveHeight: true,
-        prevArrow: '<button type="button" class="prev"><img src="icons/left_arr.svg"></button>',
-        nextArrow: '<button type="button" class="next"><img src="icons/left_arr.svg"></button>',
+        prevArrow: '<button type="button" class="prev"><img src="icons/arrow-slider.svg"></button>',
+        nextArrow: '<button type="button" class="next"><img src="icons/arrow-slider.svg"></button>',
         // responsive: [
         //   {
         //     breakpoint: 992,
@@ -42,9 +42,9 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    //слайдер карточка товара
+    //слайдер карточки товара
 
-    $('.cart__carousel-item').slick({
+    $('.cart__carousel-inner').slick({
         speed: 1200,
         adaptiveHeight: true,
         slidesToShow: 1,
@@ -60,8 +60,8 @@ window.addEventListener('DOMContentLoaded', () => {
         nextArrow: '<button type="button" class="next"><img src="icons/arrow-right.svg"></button>',
         slidesToShow: 3,
         slidesToScroll: 1,
-        asNavFor: '.cart__carousel-item',
-        dots: true,
+        asNavFor: '.cart__carousel-inner',
+        dots: false,
         centerMode: true,
         focusOnSelect: true
     });
@@ -86,5 +86,17 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 
+    //табы
+
+    $('.cart__item').on('click', function(e) {
+        e.preventDefault();
+
+        $('.cart__item').removeClass('cart__item_active');
+        $('.cart__box-item').removeClass('cart__box-item_active');
+
+        $(this).addClass('cart__item_active');
+        $($(this).attr('href')).addClass('cart__box-item_active');
+        
+    });
 
 });
