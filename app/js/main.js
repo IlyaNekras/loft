@@ -25,10 +25,10 @@ window.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', menu);
 
     function menu(event) {
-        if(event.target.closest('.menu__category-point')) {
+        if (event.target.closest('.menu__category-point')) {
             listHidden.classList.toggle('menu__category-list_active');
         }
-        if(!event.target.closest('.menu__category-point')) {
+        if (!event.target.closest('.menu__category-point')) {
             listHidden.classList.remove('menu__category-list_active');
         }
     }
@@ -68,27 +68,27 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //показ дополнительных цветов товара
 
-    let colorImg = document.querySelector('.cart__color-img'),
-        colorAct = document.querySelector('.cart__color');
+    // let colorImg = document.querySelector('.cart__color-img'),
+    //     colorAct = document.querySelector('.cart__color');
 
-    colorImg.addEventListener('click', function () {
-        colorAct.classList.toggle('cart__color_active');
-    });
+    // colorImg.addEventListener('click', function () {
+    //     colorAct.classList.toggle('cart__color_active');
+    // });
 
 
     //показ количества товара
 
-    let numImg = document.querySelector('.cart__number-img'),
-        numAct = document.querySelector('.cart__number');
+    // let numImg = document.querySelector('.cart__number-img'),
+    //     numAct = document.querySelector('.cart__number');
 
-    numImg.addEventListener('click', function () {
-        numAct.classList.toggle('cart__number_active');
-    });
+    // numImg.addEventListener('click', function () {
+    //     numAct.classList.toggle('cart__number_active');
+    // });
 
 
     //табы
 
-    $('.cart__item').on('click', function(e) {
+    $('.cart__item').on('click', function (e) {
         e.preventDefault();
 
         $('.cart__item').removeClass('cart__item_active');
@@ -96,7 +96,21 @@ window.addEventListener('DOMContentLoaded', () => {
 
         $(this).addClass('cart__item_active');
         $($(this).attr('href')).addClass('cart__box-item_active');
-        
+
+    });
+
+    //heart
+
+    // let catIcon = document.querySelectorAll('.catalog__icon');
+
+    // catIcon.forEach('click', function (i) {
+    //     i.classList.addEventListener('click', function() {
+    //         catIcon.classList.addClass('catalog__icon_active');
+    //     });
+    // });
+
+    $('.catalog__icon').on('click', function () {
+        $(this).toggleClass('catalog__icon_active');
     });
 
 });
