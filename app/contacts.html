@@ -23,7 +23,6 @@
                         <li class="menu__item"><a href="http://127.0.0.1:5500/app/contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
-
                 <div class="menu__search">
                     <img class="menu__search-icon" src="icons/search-icon.svg" alt="search-icon">
                     <input class="menu__search-area" placeholder="Поиск" style="padding: 0 20px 0 40px;" type="text">
@@ -31,7 +30,7 @@
 
                 <div class="menu__phone">
                     <img class="menu__phone-icon" src="icons/phone-icon.svg" alt="phone">
-                    <a class="menu__phone-link" href="tel:+89648999119">8 (964) 89 99 119</a>
+                    <a class="menu__phone-num" href="tel:+89648999119">8 (964) 89 99 119</a>
                 </div>
                 <div class="menu__delivery">
                     <img class="menu__delivery-icon" src="icons/delivery-icon.svg" alt="delivery">
@@ -53,7 +52,8 @@
                 <ul class="menu__category-box">
                     <li class="menu__category">
                         <div class="menu__category-item menu__category-item_img">
-                            <img src="icons/kitchen-icon.svg" alt="kitchen">
+                            <img class="menu__category-iconblack" src="icons/kitchen-icon.svg" alt="kitchen">
+                            <img class="menu__category-iconwhite" src="icons/kitchen-white.svg" alt="kitchen">
                             <a class="menu__category-descr">Кухни</a>
                         </div>
                         <ul class="menu__category-links">
@@ -86,10 +86,10 @@
                             </li>
                         </ul>
                     </li>
-
                     <li class="menu__category">
                         <div class="menu__category-item">
-                            <img src="icons/bedroom-icon.svg" alt="bedroom">
+                            <img class="menu__category-iconblack" src="icons/bedroom-icon.svg" alt="bedroom">
+                            <img class="menu__category-iconwhite" src="icons/bedroom-white.svg" alt="bedroom">
                             <a class="menu__category-descr">Спальни</a>
                         </div>
                         <ul class="menu__category-links">
@@ -122,10 +122,10 @@
                             </li>
                         </ul>
                     </li>
-
                     <li class="menu__category">
                         <div class="menu__category-item">
-                            <img src="icons/livingroom-icon.svg" alt="livingroom">
+                            <img class="menu__category-iconblack" src="icons/livingroom-icon.svg" alt="livingroom">
+                            <img class="menu__category-iconwhite" src="icons/livingroom-white.svg" alt="livingroom">
                             <a class="menu__category-descr">Гостинные</a>
                         </div>
                         <ul class="menu__category-links">
@@ -158,10 +158,10 @@
                             </li>
                         </ul>
                     </li>
-
                     <li class="menu__category">
                         <div class="menu__category-item">
-                            <img src="icons/closet-icon.svg" alt="closet">
+                            <img class="menu__category-iconblack" src="icons/closet-icon.svg" alt="closet">
+                            <img class="menu__category-iconwhite" src="icons/closet-white.svg" alt="closet">
                             <a class="menu__category-descr">Прихожие</a>
                         </div>
                         <ul class="menu__category-links">
@@ -194,10 +194,10 @@
                             </li>
                         </ul>
                     </li>
-
                     <li class="menu__category">
                         <div class="menu__category-item">
-                            <img src="icons/office-icon.svg" alt="office">
+                            <img class="menu__category-iconblack" src="icons/office-icon.svg" alt="office">
+                            <img class="menu__category-iconwhite" src="icons/office-white.svg" alt="office">
                             <a class="menu__category-descr">Офисная мебель</a>
                         </div>
                         <ul class="menu__category-links">
@@ -230,10 +230,10 @@
                             </li>
                         </ul>
                     </li>
-
                     <li class="menu__category">
                         <div class="menu__category-item">
-                            <img src="icons/childrensroom-icon.svg" alt="childrensroom">
+                            <img class="menu__category-iconblack" src="icons/childrensroom-icon.svg" alt="childrensroom">
+                            <img class="menu__category-iconwhite" src="icons/childrensroom-white.svg" alt="childrensroom">
                             <a class="menu__category-descr">Детская</a>
                         </div>
                         <ul class="menu__category-links">
@@ -276,22 +276,28 @@
                         <span></span>
                     </button>
                     <ul class="menu__category-list">
-                        <li class="menu__category-li">Новинки</li>
-                        <li class="menu__category-li">Шкафы</li>
-                        <li class="menu__category-li">Матрасы</li>
-                        <li class="menu__category-li">Мягкая мебель</li>
+                        <li><a class="menu__category-link" href="#">Новинки</a></li>
+                        <li><a class="menu__category-link" href="#">Матрасы</a></li>
+                        <li><a class="menu__category-link" href="#">Шкафы</a></li>
+                        <li><a class="menu__category-link" href="#">Мягкая мебель</a></li>
                     </ul>
                 </div>
+
             </div>
-            <nav aria-label="Breadcrumb" class="breadcrumb">
-                <ul>
-                    <li><a href="http://localhost:3000/">Главная</a></li>/
-                    <li>Контакты</li>
-                </ul>
-            </nav>
         </div>
     </header>
-
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-list__item">
+                    <a href="http://localhost:3000/">Главная</a>
+                </li>
+                <li class="breadcrumbs-list__item">
+                    <span>Контакты</span>
+                </li>
+            </ul>
+        </div>
+    </div>
     <section class="contacts">
         <div class="container">
 

@@ -15,12 +15,16 @@
 }
 
 a {
-    color: #414141;
+    color: #969696;
     text-decoration: none;
     margin: 0;
     padding: 0;
 }
 
+ul, li{
+    list-style-type: none;
+
+}
 
 @import 'base/variables';
 
@@ -29,7 +33,7 @@ a {
 @import 'blocks/carousel';
 @import 'blocks/catalog';
 @import 'blocks/footer';
-@import 'blocks/breadcrumb';
+@import 'blocks/breadcrumbs';
 @import 'blocks/contacts';
 @import 'blocks/title';
 @import 'blocks/about';

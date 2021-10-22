@@ -17,22 +17,16 @@
     &__items {
         display: flex;
         margin-right: 10px;
-        list-style-type: none;
-
-        li {
-            a {
-                &:hover {
-                    color: $color;
-                }
-            }
-        }
     }
 
-    &__item {
+    &__item a {
         font-size: 14px;
+        padding: 5px 12px;
+        border-radius: 10px;
 
-        &:nth-child(2) {
-            padding: 0 30px;
+        &:hover {
+            background-color: rgb(219, 219, 219, .2);
+            color: $color;
         }
     }
 
@@ -59,6 +53,12 @@
     &__phone {
         display: flex;
         font-size: 14px;
+        padding: 10px 12px;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: rgb(219, 219, 219, .2);
+        }
     }
 
     &__phone-icon {
@@ -70,6 +70,12 @@
     &__delivery {
         display: flex;
         font-size: 14px;
+        padding: 10px 12px;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: rgb(219, 219, 219, .2);
+        }
     }
 
     &__delivery-icon {
@@ -80,11 +86,22 @@
 
     &__icons {
         display: flex;
+        height: 35px;
+    }
+
+    &__icons-profile,
+    &__icons-chosen,
+    &__icons-bag {
+        padding: 8px 9px;
+        border-radius: 100%;
+
+        &:hover {
+            background-color: rgb(219, 219, 219, .2);
+        }
     }
 
     &__icons-bag {
         position: relative;
-        padding: 0 34px 0 30px;
 
         &::before {
             content: "";
@@ -93,8 +110,8 @@
             width: 8px;
             border-radius: 100%;
             background-color: #D74444;
-            top: 0;
-            right: 32px;
+            top: 9px;
+            right: 9px;
         }
     }
 
@@ -110,7 +127,6 @@
 
     &__categories ul ul {
         display: none;
-        list-style-type: none;
         background-color: #fff;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
     }
@@ -125,8 +141,8 @@
 
     &__category {
         height: 100%;
-        list-style-type: none;
         width: 150px;
+
         &:nth-child(5) {
             width: 211px;
         }
@@ -134,6 +150,7 @@
         &:hover {
             background-color: $color;
             cursor: pointer;
+
             ul {
                 display: block;
                 width: 189px;
@@ -146,10 +163,8 @@
 
     }
 
-    &__category-link {
-        &:hover {
-            color: $color;
-        }
+    &__category-link:hover {
+        color: $color;
     }
 
     &__category-item {
@@ -162,9 +177,21 @@
         }
     }
 
+    &__category-iconwhite {
+        display: none;
+    }
+
+    &__category:hover {
+        .menu__category-iconwhite {
+            display: block;
+        }
+
+        .menu__category-iconblack {
+            display: none;
+        }
+    }
 
     &__category img {
-        display: block;
         margin-left: 24px;
     }
 
@@ -176,23 +203,21 @@
 
     &__category-links {
         margin-top: 22px;
-        padding: 25px;
         font-size: 14px;
+        padding: 12px 13px;
 
         li {
-            padding-top: 25px;
-
-            &:first-child {
-                padding-top: 0;
-            }
+            margin: 22px 0;
         }
     }
 
     &__category-link {
-        a {
-            &:hover {
-                color: $color;
-            }
+        padding: 13px 13px;
+
+        &:hover {
+            background-color: rgb(219, 219, 219, .2);
+            border-radius: 5px;
+            color: $color;
         }
     }
 
@@ -204,48 +229,22 @@
 
     &__category-hidden {
         position: relative;
-    }
-
-    &__category-list {
-        position: absolute;
-        display: none;
-        right: -1px;
-        padding: 25px;
-        width: 151px;
-        z-index: 1;
-        background-color: #fff;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
-        list-style-type: none;
-        top: 48px;
-        font-size: 14px;
-
-        &_active {
-            display: block;
-        }
-
-        li {
-            margin-top: 25px;
-            cursor: pointer;
-
-            &:hover {
-                color: $color;
-            }
-
-            &:first-child {
-                margin-top: 0;
-            }
-        }
+        margin: 0 20px;
     }
 
     &__category-point {
         display: flex;
-        height: 27px;
         flex-direction: column;
-        padding-left: 47px;
-        padding-right: 41px;
         cursor: pointer;
         background-color: #fff;
         border: none;
+        padding: 10px 20px;
+        border-radius: 100%;
+
+        &:hover {
+            background-color: rgb(219, 219, 219, .2);
+
+        }
 
         span {
             background-color: #000;
@@ -259,6 +258,29 @@
             }
         }
     }
+
+    &__category-list {
+        position: absolute;
+        display: none;
+        right: -1px;
+        padding: 12px 13px;
+        width: 151px;
+        z-index: 1;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+        top: 39px;
+        font-size: 14px;
+
+        &_active {
+            display: block;
+        }
+
+        li {
+            margin: 20px 0;
+        }
+    }
+
+
 
 
 }
