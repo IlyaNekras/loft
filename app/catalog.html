@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Каталог</title>
 </head>
@@ -233,8 +237,10 @@
                     </li>
                     <li class="menu__category">
                         <div class="menu__category-item">
-                            <img class="menu__category-iconblack" src="icons/childrensroom-icon.svg" alt="childrensroom">
-                            <img class="menu__category-iconwhite" src="icons/childrensroom-white.svg" alt="childrensroom">
+                            <img class="menu__category-iconblack" src="icons/childrensroom-icon.svg"
+                                alt="childrensroom">
+                            <img class="menu__category-iconwhite" src="icons/childrensroom-white.svg"
+                                alt="childrensroom">
                             <a class="menu__category-descr">Детская</a>
                         </div>
                         <ul class="menu__category-links">
@@ -291,7 +297,7 @@
         <div class="container">
             <ul class="breadcrumbs-list">
                 <li class="breadcrumbs-list__item"><a href="http://localhost:3000/">Главная</a></li>
-                <li class="breadcrumbs-list__item"><a href="№">Гостинные</a></li>
+                <li class="breadcrumbs-list__item"><a href="#">Гостинные</a></li>
                 <li class="breadcrumbs-list__item"><a href="#">Мягкая мебель</a></li>
                 <li class="breadcrumbs-list__item"><span>Диваны</span></li>
             </ul>
@@ -302,8 +308,9 @@
 
             <div class="catalog__wrap">
                 <aside class="catalog__filters">
-                    <p>Раздел</p>
-                    <form><select size="1" name="mebel">
+                    <p class="catalog__filters-title">Раздел</p>
+                    <form>
+                        <select class="catalog__filters-select" size="1" name="mebel">
                             <option label="Кухни" value="1"></option>
                             <option label="Спальни" value="2"></option>
                             <option label="Гостинные" value="3" selected></option>
@@ -311,7 +318,7 @@
                             <option label="Офисная мебель" value="5"></option>
                             <option label="Детская" value="6"></option>
                         </select>
-                        <select size="1" name="mebel">
+                        <select class="catalog__filters-select" size="1" name="mebel">
                             <option label="Мягкая мебель" value="1" selected></option>
                             <option label="Корпусная мебель" value="2"></option>
                             <option label="Мебель" value="3"></option>
@@ -319,15 +326,16 @@
                             <option label="Шкафы" value="5"></option>
                             <option label="Тумбы" value="6"></option>
                         </select>
-                        <select size="1" name="mebel">
+                        <select class="catalog__filters-select" size="1" name="mebel">
                             <option label="Диваны" value="1" selected></option>
                             <option label="Кресла" value="2"></option>
                             <option label="Кровати" value="3"></option>
                             <option label="Матрасы" value="4"></option>
                             <option label="Пуфы" value="5"></option>
                             <option label="Сиденья" value="6"></option>
-                        </select></form>
-                    <p>Цена</p>
+                        </select>
+                    </form>
+                    <p class="catalog__filters-title">Цена</p>
                     <div class="catalog__slide">
                         <input type="range" min="2" max="150000" value="50" class="catalog__slider" id="Range">
                     </div>
@@ -642,10 +650,12 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src=" js/main.js"> </script>
+    <script src=" js/main.js"></script>
 </body>
 
 </html>
