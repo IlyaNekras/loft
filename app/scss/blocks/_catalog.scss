@@ -2,30 +2,109 @@
     margin-bottom: 70px;
     position: relative;
 
+    &__sort {
+        position: absolute;
+        right: 15px;
+        top: 0;
+        text-align: end;
+        font-size: 12px;
+        line-height: 14px;
+        color: $main-color;
+        z-index: 10;
+        &-button {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            margin-bottom: 6px;
+
+        }
+
+        &-buttontext {
+            margin-right: 30px;
+        }
+
+        &-btn {
+            border: none;
+        }
+
+        &-btn::before {
+            position: absolute;
+            content: "";
+            background-image: url('../icons/sort-btn.svg');
+            width: 20px;
+            height: 12px;
+            background-repeat: no-repeat;
+            top: 4px;
+            right: 0;
+            cursor: pointer;
+        }
+        &-list{
+            display: none;
+            width: 165px;
+            height: 122px;
+            background-color: #fff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+            padding: 10px;
+            &_active{
+                display: block;
+            }
+        }
+        
+        &-item{
+            padding: 10px;
+            &:hover{
+                background-color: rgba(248, 248, 248, .9);
+                border-radius: 5px;
+            }
+        }
+        &-item a{
+            color: $main-color;
+        }
+
+    }
+
     &__wrap {
         display: flex;
     }
 
-    &__filters {
-        padding: 10px 20px 10px;
+    &-filters {
+        padding: 0 20px;
         margin-right: 28px;
-        margin-top: 2px;
         width: 263px;
         height: 591px;
         background: #FFFFFF;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
 
-        &-title {
-            margin: 10px 0;
+        &__box {
+            margin-top: 20px;
+        }
+
+        &__title {
+            margin-bottom: 20px;
             font-weight: 500;
             font-size: 14px;
             color: $main-color;
         }
 
-        &-select {
+        .color {
+            margin-top: 60px;
+        }
+
+        .price {
+            margin-bottom: 0;
+        }
+
+        &__select-box {
+            margin-bottom: 10px;
+        }
+
+        &__select {
+            display: contents;
+        }
+
+        .jq-selectbox__select {
+            position: relative;
             outline: none;
-            padding: 0 10px;
-            margin-top: 10px;
             width: 223px;
             height: 29px;
             background: #F8F8F8;
@@ -34,14 +113,232 @@
             color: #686868;
             border: none;
             cursor: pointer;
+            padding: 0 10px;
+            box-shadow: none;
+            text-shadow: none;
+        }
 
-            &:last-child {
-                margin-bottom: 10px;
+        .jq-selectbox.focused .jq-selectbox__select {
+            border: none;
+        }
+
+        .jq-selectbox__trigger {
+            border-left: none;
+        }
+
+        .jq-selectbox__trigger-arrow {
+            background-image: url('../icons/arrow-down.svg');
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 14px;
+            right: 12px;
+            width: 8px;
+            height: 5px;
+            border: none;
+        }
+
+        .jq-selectbox__dropdown {
+            position: absolute;
+            border: none;
+            background-color: #fff;
+            box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.11);
+            ;
+            font: 'Roboto';
+            width: 223px !important;
+            left: 35px;
+            height: auto;
+            bottom: auto;
+            z-index: 11;
+        }
+
+        .jq-selectbox li:hover,
+        .jq-selectbox li.selected {
+            background-color: #F8F8F8;
+            ;
+            color: #686868;
+        }
+
+        .jq-selectbox li {
+            color: #686868;
+        }
+
+        .irs--flat .irs-from,
+        .irs--flat .irs-to,
+        .irs-hidden-input {
+            display: none !important;
+        }
+
+
+        .irs--flat .irs-min,
+        .irs--flat .irs-max {
+            top: 50px;
+            padding: 8px 5px;
+            text-shadow: none;
+            border-radius: none;
+            line-height: 15px;
+            visibility: visible !important;
+            text-align: center;
+            font-size: 13px;
+            line-height: 15px;
+            color: $main-color;
+            width: 90px;
+            height: 30px;
+            background: #F8F8F8;
+            border-radius: 3px;
+        }
+
+        .irs-min::before {
+            content: "";
+            position: absolute;
+            width: 19px;
+            height: 2px;
+            right: -30px;
+            top: 14px;
+            background-color: #414141;
+        }
+
+
+
+        .irs--flat .irs-line {
+            top: 25px;
+            height: 10px;
+            background-color: #ececec;
+            border-radius: 3px;
+        }
+
+        .irs--flat .irs-bar {
+            top: 25px;
+            height: 10px;
+            background-color: $color;
+        }
+
+
+        .irs--flat .irs-handle {
+            top: 23px;
+            width: 14px;
+            height: 14px;
+            background-color: #fff;
+            border-radius: 100%;
+            border: 3px solid $color;
+        }
+
+        .irs--flat .irs-handle i:first-child {
+            display: none;
+        }
+
+        &__checkbox-color {
+            display: flex;
+        }
+
+        &__label {
+            margin-right: 10px;
+        }
+
+        &__checkbox .color-1,
+        &__checkbox .color-2,
+        &__checkbox .color-3,
+        &__checkbox .color-4,
+        &__checkbox .color-5,
+        &__checkbox .color-6 {
+            display: contents;
+            margin: 0;
+        }
+
+        .jq-checkbox.focused {
+            border: none;
+        }
+
+        .jq-checkbox.color-1 {
+            background-color: #E94848;
+        }
+
+        .jq-checkbox.color-2 {
+            background-color: #43BF57;
+        }
+
+        .jq-checkbox.color-3 {
+            background-color: #E4E4E4;
+        }
+
+        .jq-checkbox.color-4 {
+            background-color: #3E3E3E;
+        }
+
+        .jq-checkbox.color-5 {
+            background-color: #675A5A;
+        }
+
+        .jq-checkbox.color-6 {
+            background-color: #864F4F;
+        }
+
+
+        .jq-checkbox {
+            width: 18px;
+            height: 18px;
+            border: none;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+            cursor: pointer;
+            padding-top: 4px;
+            vertical-align: 0;
+            margin: 0;
+        }
+
+        .jq-checkbox.checked .jq-checkbox__div {
+            background-image: url('../icons/marker.svg');
+            background-repeat: no-repeat;
+            width: 12px;
+            height: 10px;
+            margin: 0 auto;
+            border-bottom: none;
+            border-left: none;
+            transform: rotate(0deg);
+        }
+
+        &__label {
+            display: flex;
+            position: relative;
+            margin-right: 10px;
+            font-size: 12px;
+            line-height: 14px;
+            color: #414141;
+
+            span {
+                position: absolute;
+                top: 3px;
+                left: 28px;
+
             }
         }
 
-        option {
-            margin-top: 14px;
+        &__checkbox .checkbox {
+            display: contents;
+        }
+
+        .jq-checkbox.focused {
+            border: none;
+        }
+
+        .jq-checkbox.checkbox {
+            border: 1px solid $color;
+            border-radius: 3px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .jq-checkbox.checked.checkbox {
+            background-color: $color;
+        }
+
+        &__btn {
+            margin-top: 5px;
+            background-color: transparent;
+            border: none;
+            color: $color;
+            font-size: 13px;
+            cursor: pointer;
         }
 
     }
@@ -74,6 +371,7 @@
 
         &:hover {
             box-shadow: 0px -7px 9px rgba(0, 0, 0, 0.11);
+
             .catalog__item-hidden {
                 display: block;
                 position: absolute;
@@ -189,9 +487,6 @@
         color: #CCCCCC;
         padding-left: 6px;
     }
-
-
-
 
     &__dimensions-size {
         font-size: 12px;

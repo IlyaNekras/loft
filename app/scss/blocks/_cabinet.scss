@@ -152,10 +152,14 @@
         bottom: 0;
         width: 101px;
         height: 40px;
-        background: $color;
+        background-color: $color;
         border: none;
         cursor: pointer;
         color: #fff;
+        &:hover{
+            background-color: rgba(36, 84, 98, .9);
+
+        }
     }
 
     &__table {

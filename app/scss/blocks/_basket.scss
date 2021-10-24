@@ -190,10 +190,14 @@
     &__total-btn {
         width: 202px;
         height: 40px;
-        background: $color;
+        background-color: $color;
         color: #fff;
         cursor: pointer;
+        border: none;
+        &:hover{
+            background-color: rgba(36, 84, 98, .9);
 
+        }
     }
     &__bottom{
         margin-top: 100px;

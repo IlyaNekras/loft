@@ -93,11 +93,14 @@
     &__btn {
         width: 143px;
         height: 40px;
-        background: $color;
+        background-color: $color;
         color: #fff;
         border: none;
         cursor: pointer;
         font-size: 13px;
+        &:hover{
+            background-color: rgba(36, 84, 98, .9);
+        }
     }
 
     &__add {
