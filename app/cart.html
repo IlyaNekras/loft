@@ -346,51 +346,44 @@
                     <div class="cart__box">
                         <div class="cart__price">28 490₽</div>
                         <button class="cart__btn">Купить</button>
-                        <a href="#" class="cart__add"><img src="icons/heart-icon.svg" alt="heart">
-                            <p>Добавить в желаемое</p>
-                        </a>
+                        <button class="cart__icon heart-icon"><span>Добавить в желаемое</span></button>
                     </div>
-                    <div class="cart__options">
 
-                        <div class="cart__item-char">
-                            <p>Цвета</p>
-                            <div class="cart__colors"><img class="cart__color-img" src="icons/arrow-down.svg"
-                                    alt="down">
-                                <span></span>
-                                <div class="cart__color">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
 
+                    <div class="cart-options">
+                        <div class="cart-options__colors">
+                            <p class="cart-options__title">Цвета</p>
+                            <div class="cart-options__select-box">
+                                <select class="cart-options__select filters-style">
+                                    <option class="cart-options__color"><span>1</span></option>
+                                    <option class="cart-options__color">2</option>
+                                    <option class="cart-options__color">3</option>
+                                </select>
                             </div>
                         </div>
-
-                        <div class="cart__item-char">
-                            <p>Количество</p>
-                            <div class="cart__numbers"><img class="cart__number-img" src="icons/arrow-down.svg"
-                                    alt="down">
-                                <span>1</span>
-                                <div class="cart__number">
-                                    <span>2</span>
-                                    <span>3</span>
-                                    <span>4</span>
-                                </div>
+                        <div class="cart-options__num">
+                            <p class="cart-options__title">Количество</p>
+                            <div class="cart-options__select-box">
+                                <select class="cart-options__select filters-style">
+                                    <option class="cart-options__num"><span>1</span></option>
+                                    <option class="cart-options__num">2</option>
+                                    <option class="cart-options__num">3</option>
+                                </select>
                             </div>
                         </div>
-
-                        <div class="cart__item-char">
-                            <p>Размеры</p>
-                            <div class="cart__sizes"><img src="icons/arrow-down.svg" alt="down">
-                                <span>218 СМ x 95 СМ x 95 СМ</span>
-                                <!-- <div class="cart__size">208 СМ x 90 СМ x 90 СМ</div>
-                            <div class="cart__size">198 СМ x 85 СМ x 85 СМ</div>
-                            <div class="cart__size">188 СМ x 80 СМ x 80 СМ</div> -->
+                   
+                        <div class="cart-options__char">
+                            <p class="cart-options__title">Размер (Д × Ш × В)</p>
+                            <div class="cart-options__select-box">
+                                <select class="cart-options__select filters-style">
+                                    <option class="cart-options__char">218 СМ × 95 СМ × 90 СМ</option>
+                                    <option class="cart-options__char">222 СМ × 93 СМ × 93 СМ</option>
+                                    <option class="cart-options__char">233 СМ × 94 СМ × 92 СМ</option>
+                                </select>
                             </div>
                         </div>
+                    </div> 
 
-
-                    </div>
                     <div class="cart__descr">
                         <span>Описание</span>
                         <p>Лаконичные линии и простые формы, безупречный стиль и индивидуальность – все это диван
@@ -502,20 +495,7 @@
                     </div>
                 </div>
                 <div id="delivery" class="cart__box-item">
-                    <p class="cart__delivery-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-                        laboriosam doloribus illum. Vero, officia. Error blanditiis ullam explicabo illum laudantium
-                        delectus, obcaecati quo molestiae assumenda ad tempora non asperiores praesentium.
-                        Commodi repudiandae maxime nemo! Nobis soluta officiis necessitatibus aliquam neque
-                        consectetur
-                        similique dolores iure? Eaque velit odio expedita ipsam dolorum iure cupiditate, temporibus
-                        laudantium odit facere, aliquam qui voluptas eveniet.
-                        Voluptas inventore blanditiis, doloremque soluta labore reiciendis esse ea cupiditate vitae
-                        laborum eius porro nam, illum autem natus non libero commodi quo, facilis molestiae ullam
-                        aliquid. Tempore alias dolorum eaque!
-                        Dolore tenetur, architecto velit itaque cupiditate optio rem odio et? Ratione sed veritatis,
-                        nemo in cum harum quidem temporibus recusandae sunt laborum dolor rem! Sint ea aperiam id
-                        ipsum!
-                        Asperiores!</p>
+                    <p class="cart__delivery-info">доставка и оплата</p>
                 </div>
             </div>
         </div>
@@ -526,7 +506,7 @@
             <h4>Хиты продаж</h4>
             <div class="catalog__items">
                 <div class="catalog__item">
-                    <button class="catalog__icon"></button>
+                    <button class="heart-icon"></button>
                     <a href="#" class="catalog-item__link">
                         <div class="catalog__item-percent">
                             <img class="catalog__icon-percent" src="icons/vector.svg" alt="vector">
@@ -557,7 +537,7 @@
                     </div>
                 </div>
                 <div class="catalog__item">
-                    <button class="catalog__icon"></button>
+                    <button class="heart-icon"></button>
                     <a href="#" class="catalog-item__link">
                         <div class="catalog__item-percent">
                             <img class="catalog__icon-percent" src="icons/vector.svg" alt="vector">
@@ -588,7 +568,7 @@
                     </div>
                 </div>
                 <div class="catalog__item catalog__item-sale">
-                    <button class="catalog__icon"></button>
+                    <button class="heart-icon"></button>
                     <a href="#" class="catalog-item__link">
                         <div class="catalog__item-percent">
                             <img class="catalog__icon-percent" src="icons/vector.svg" alt="vector">
@@ -619,7 +599,7 @@
                     </div>
                 </div>
                 <div class="catalog__item">
-                    <button class="catalog__icon"></button>
+                    <button class="heart-icon"></button>
                     <a href="#" class="catalog-item__link">
                         <div class="catalog__item-percent">
                             <img class="catalog__icon-percent" src="icons/vector.svg" alt="vector">
@@ -650,7 +630,7 @@
                     </div>
                 </div>
                 <div class="catalog__item">
-                    <button class="catalog__icon"></button>
+                    <button class="heart-icon"></button>
                     <a href="#" class="catalog-item__link">
                         <div class="catalog__item-percent">
                             <img class="catalog__icon-percent" src="icons/vector.svg" alt="vector">
@@ -681,7 +661,7 @@
                     </div>
                 </div>
                 <div class="catalog__item">
-                    <button class="catalog__icon"></button>
+                    <button class="heart-icon"></button>
                     <a href="#" class="catalog-item__link">
                         <div class="catalog__item-percent">
                             <img class="catalog__icon-percent" src="icons/vector.svg" alt="vector">
@@ -712,7 +692,7 @@
                     </div>
                 </div>
                 <div class="catalog__item">
-                    <button class="catalog__icon"></button>
+                    <button class="heart-icon"></button>
                     <a href="#" class="catalog-item__link">
                         <div class="catalog__item-percent">
                             <img class="catalog__icon-percent" src="icons/vector.svg" alt="vector">
@@ -743,7 +723,7 @@
                     </div>
                 </div>
                 <div class="catalog__item">
-                    <button class="catalog__icon"></button>
+                    <button class="heart-icon"></button>
                     <a href="#" class="catalog-item__link">
                         <div class="catalog__item-percent">
                             <img class="catalog__icon-percent" src="icons/vector.svg" alt="vector">

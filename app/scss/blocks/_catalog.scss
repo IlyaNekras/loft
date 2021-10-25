@@ -11,6 +11,7 @@
         line-height: 14px;
         color: $main-color;
         z-index: 10;
+
         &-button {
             display: flex;
             align-items: center;
@@ -38,27 +39,36 @@
             right: 0;
             cursor: pointer;
         }
-        &-list{
+
+        &-list {
             display: none;
             width: 165px;
             height: 122px;
             background-color: #fff;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
             padding: 10px;
-            &_active{
+
+            &_active {
                 display: block;
             }
         }
-        
-        &-item{
+
+        &-item {
+            color: $main-color;
             padding: 10px;
-            &:hover{
+
+            &:hover {
                 background-color: rgba(248, 248, 248, .9);
                 border-radius: 5px;
             }
         }
-        &-item a{
-            color: $main-color;
+
+        &-item:hover {
+            color: $color;
+        }
+
+        li {
+            margin: 15px 0;
         }
 
     }
@@ -142,7 +152,6 @@
             border: none;
             background-color: #fff;
             box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.11);
-            ;
             font: 'Roboto';
             width: 223px !important;
             left: 35px;
@@ -379,13 +388,13 @@
         }
     }
 
-    &__icon {
+    .heart-icon {
         width: 22px;
         height: 19px;
         border: none;
         position: absolute;
         top: 21px;
-        right: 15.5px;
+        right: 16px;
         background: transparent;
         z-index: 9;
 

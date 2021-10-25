@@ -124,8 +124,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //favorit icon active
 
-    $('.catalog__icon').on('click', function () {
-        $(this).toggleClass('catalog__icon_active');
+    $('.heart-icon').on('click', function () {
+        $(this).toggleClass('heart-icon_active');
     });
 
     //range slider
