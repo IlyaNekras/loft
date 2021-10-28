@@ -134,4 +134,13 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     $('.filters-style').styler();
+
+
+    //звездный рейтинг
+
+    $(".rate-yo").rateYo({
+        starWidth: "15px",
+        normalFill: "#D1D1D1",
+        ratedFill: "#000",
+    });
 });

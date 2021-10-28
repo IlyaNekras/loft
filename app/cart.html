@@ -23,9 +23,9 @@
                 </div>
                 <nav>
                     <ul class="menu__items">
-                        <li class="menu__item"><a href="http://localhost:3000/">Главная</a></li>
-                        <li class="menu__item"><a href="http://127.0.0.1:5500/app/about.html">О нас</a></li>
-                        <li class="menu__item"><a href="http://127.0.0.1:5500/app/contacts.html">Контакты</a></li>
+                        <li><a class="menu__item-link" href="http://localhost:3000/">Главная</a></li>
+                        <li><a class="menu__item-link" href="http://127.0.0.1:5500/app/about.html">О нас</a></li>
+                        <li><a class="menu__item-link" href="http://127.0.0.1:5500/app/contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="menu__search">
@@ -297,10 +297,10 @@
     <div class="breadcrumbs">
         <div class="container">
             <ul class="breadcrumbs-list">
-                <li class="breadcrumbs-list__item"><a href="http://localhost:3000/">Главная</a></li>
-                <li class="breadcrumbs-list__item"><a href="№">Гостинные</a></li>
-                <li class="breadcrumbs-list__item"><a href="#">Мягкая мебель</a></li>
-                <li class="breadcrumbs-list__item"><span>Диваны</span></li>
+                <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link" href="#">Главная</a></li>
+                <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link" href="#">Гостинные</a></li>
+                <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link" href="#">Мягкая мебель</a></li>
+                <li class="breadcrumbs-list__item"><span class="breadcrumbs-list__link">Диваны</span></li>
             </ul>
         </div>
     </div>
@@ -334,17 +334,14 @@
                     </div>
                 </div>
                 <div class="cart__info">
-                    <div class="cart__grade">
-                        <img src="icons/blackStar.svg" alt="blackStar">
-                        <img src="icons/blackStar.svg" alt="blackStar">
-                        <img src="icons/blackStar.svg" alt="blackStar">
-                        <img src="icons/blackStar.svg" alt="blackStar">
-                        <img src="icons/greyStar.svg" alt="greyStar">
-                    </div>
-                    <div class="cart__name">Динс Velvet Yellow</div>
-                    <div class="cart__subname">Диваны</div>
+
+                    <a class="rate" href="#">
+                        <div class="rate-yo" data-rateyo-rating="4"></div>
+                    </a>
+                    <p class="cart__name">Динс Velvet Yellow</p>
+                    <p class="cart__subname">Диваны</p>
                     <div class="cart__box">
-                        <div class="cart__price">28 490₽</div>
+                        <p class="cart__price">28 490₽</p>
                         <button class="cart__btn">Купить</button>
                         <button class="cart__icon heart-icon"><span>Добавить в желаемое</span></button>
                     </div>
@@ -355,9 +352,9 @@
                             <p class="cart-options__title">Цвета</p>
                             <div class="cart-options__select-box">
                                 <select class="cart-options__select filters-style">
-                                    <option class="cart-options__color"><span>1</span></option>
-                                    <option class="cart-options__color">2</option>
-                                    <option class="cart-options__color">3</option>
+                                    <option class="cart-options__color">red</option>
+                                    <option class="cart-options__color">blue</option>
+                                    <option class="cart-options__color">green</option>
                                 </select>
                             </div>
                         </div>
@@ -406,58 +403,58 @@
                     <ul class="cart__character-inner ">
                         <div class="cart__left-content">
                             <li>
-                                <div class="cart__feature-left">Размер</div>
-                                <div class="cart__feature-right">218 × 95 × 90 (Дл. × Шир. × Выс.)</div>
+                                <p class="cart__feature-left">Размер</p>
+                                <p class="cart__feature-right">218 × 95 × 90 (Дл. × Шир. × Выс.)</p>
                             </li>
                             <li>
-                                <div class="cart__feature-left">Спальное место</div>
-                                <div class="cart__feature-right">195 × 144 × 44 (Дл. × Шир. × Выс.)</div>
+                                <p class="cart__feature-left">Спальное место</p>
+                                <p class="cart__feature-right">195 × 144 × 44 (Дл. × Шир. × Выс.)</p>
                             </li>
                             <li>
-                                <div class="cart__feature-left">Посадочное место</div>
-                                <div class="cart__feature-right">50 × 44 (Глуб. × Выс.)</div>
+                                <p class="cart__feature-left">Посадочное место</p>
+                                <p class="cart__feature-right">50 × 44 (Глуб. × Выс.)</p>
                             </li>
                             <li>
-                                <div class="cart__feature-left">Каркас</div>
-                                <div class="cart__feature-right">массив, фанера, ДВП, пружинная змейка</div>
+                                <p class="cart__feature-left">Каркас</p>
+                                <p class="cart__feature-right">массив, фанера, ДВП, пружинная змейка</p>
                             </li>
                             <li>
-                                <div class="cart__feature-left">Механизм</div>
-                                <div class="cart__feature-right">пантограф</div>
+                                <p class="cart__feature-left">Механизм</p>
+                                <p class="cart__feature-right">пантограф</p>
                             </li>
                             <li>
-                                <div class="cart__feature-left">Материал ножек</div>
-                                <div class="cart__feature-right">массив</div>
+                                <p class="cart__feature-left">Материал ножек</p>
+                                <p class="cart__feature-right">массив</p>
                             </li>
                             <li>
-                                <div class="cart__feature-left">Наполнение подушек</div>
-                                <div class="cart__feature-right">крошка ППУ, холлофайбер</div>
+                                <p class="cart__feature-left">Наполнение подушек</p>
+                                <p class="cart__feature-right">крошка ППУ, холлофайбер</p>
                             </li>
                         </div>
                         <div class="cart__right-content">
                             <li>
-                                <div class="cart__feature-left">Бельевой ящик</div>
-                                <div class="cart__feature-right">есть</div>
+                                <p class="cart__feature-left">Бельевой ящик</p>
+                                <p class="cart__feature-right">есть</p>
                             </li>
                             <li>
                                 <div class="cart__feature-left">Зарядное устройство USB</div>
-                                <div class="cart__feature-right">нет</div>
+                                <p class="cart__feature-right">нет</p>
                             </li>
                             <li>
-                                <div class="cart__feature-left">Съемный чехол</div>
-                                <div class="cart__feature-right">нет</div>
+                                <p class="cart__feature-left">Съемный чехол</p>
+                                <p class="cart__feature-right">нет</p>
                             </li>
                             <li>
-                                <div class="cart__feature-left">Декоративные подушки</div>
-                                <div class="cart__feature-right">есть</div>
+                                <p class="cart__feature-left">Декоративные подушки</p>
+                                <p class="cart__feature-right">есть</p>
                             </li>
                             <li>
-                                <div class="cart__feature-left">Вариант доставки</div>
-                                <div class="cart__feature-right">в разобранном виде</div>
+                                <p class="cart__feature-left">Вариант доставки</p>
+                                <p class="cart__feature-right">в разобранном виде</p>
                             </li>
                             <li>
-                                <div class="cart__feature-left">Производитель</div>
-                                <div class="cart__feature-right">Россия</div>
+                                <p class="cart__feature-left">Производитель</p>
+                                <p class="cart__feature-right">Россия</p>
                             </li>
                         </div>
                     </ul>
@@ -478,9 +475,9 @@
                         <div class="cart__reviews-inner">
                             <h4 class="cart__reviews-name">Мария Иванова</h4>
                             <p class="cart__reviews-age">27 лет</p>
-                            <div class="cart__reviews-text">Отличный диван! Простые формы, безупречный стиль и
+                            <p class="cart__reviews-text">Отличный диван! Простые формы, безупречный стиль и
                                 индивидуальность. Сдержанный скандинавский дизайн - украшение для любой современной
-                                обстановки. Элегантный, комфортный и функциональный.</div>
+                                обстановки. Элегантный, комфортный и функциональный.</p>
                         </div>
                     </div>
                     <div class="cart__reviews-item">
@@ -488,9 +485,9 @@
                         <div class="cart__reviews-inner">
                             <h4 class="cart__reviews-name">Мария Иванова</h4>
                             <p class="cart__reviews-age">27 лет</p>
-                            <div class="cart__reviews-text">Отличный диван! Простые формы, безупречный стиль и
+                            <p class="cart__reviews-text">Отличный диван! Простые формы, безупречный стиль и
                                 индивидуальность. Сдержанный скандинавский дизайн - украшение для любой современной
-                                обстановки. Элегантный, комфортный и функциональный.</div>
+                                обстановки. Элегантный, комфортный и функциональный.</p>
                         </div>
                     </div>
                 </div>
@@ -503,7 +500,8 @@
 
     <section class="catalog">
         <div class="container">
-            <h4>Хиты продаж</h4>
+
+            <p>Хиты продаж</p>
             <div class="catalog__items">
                 <div class="catalog__item">
                     <button class="heart-icon"></button>
@@ -517,8 +515,8 @@
                         <p class="catalog__subname">Барные стулья</p>
                         <p class="catalog__price">2 300₽</p>
                         <div class="catalog__price-box">
-                            <div class="catalog__price-new">28 490₽</div>
-                            <div class="catalog__price-old">37 990₽</div>
+                            <p class="catalog__price-new">28 490₽</p>
+                            <p class="catalog__price-old">37 990₽</p>
                         </div>
                     </a>
                     <div class="catalog__item-hidden">
@@ -548,8 +546,8 @@
                         <p class="catalog__subname">Барные стулья</p>
                         <p class="catalog__price">4 690₽</p>
                         <div class="catalog__price-box">
-                            <div class="catalog__price-new">3 690₽</div>
-                            <div class="catalog__price-old">4 690₽</div>
+                            <p class="catalog__price-new">3 690₽</p>
+                            <p class="catalog__price-old">4 690₽</p>
                         </div>
                     </a>
                     <div class="catalog__item-hidden">
@@ -579,8 +577,8 @@
                         <p class="catalog__subname">Диваны</p>
                         <p class="catalog__price">37 990₽</p>
                         <div class="catalog__price-box">
-                            <div class="catalog__price-new">28 490₽</div>
-                            <div class="catalog__price-old">37 990₽</div>
+                            <p class="catalog__price-new">28 490₽</p>
+                            <p class="catalog__price-old">37 990₽</p>
                         </div>
                     </a>
                     <div class="catalog__item-hidden">
@@ -610,8 +608,8 @@
                         <p class="catalog__subname">Диваны</p>
                         <p class="catalog__price">37 990₽</p>
                         <div class="catalog__price-box">
-                            <div class="catalog__price-new">28 490₽</div>
-                            <div class="catalog__price-old">37 990₽</div>
+                            <p class="catalog__price-new">28 490₽</p>
+                            <p class="catalog__price-old">37 990₽</p>
                         </div>
                     </a>
                     <div class="catalog__item-hidden">
@@ -641,8 +639,8 @@
                         <p class="catalog__subname">Двухспальные кровати</p>
                         <p class="catalog__price">21 990₽</p>
                         <div class="catalog__price-box">
-                            <div class="catalog__price-new">28 490₽</div>
-                            <div class="catalog__price-old">21 990₽</div>
+                            <p class="catalog__price-new">28 490₽</p>
+                            <p class="catalog__price-old">21 990₽</p>
                         </div>
                     </a>
                     <div class="catalog__item-hidden">
@@ -672,8 +670,8 @@
                         <p class="catalog__subname">Буфеты</p>
                         <p class="catalog__price">18 990₽</p>
                         <div class="catalog__price-box">
-                            <div class="catalog__price-new">16 490₽</div>
-                            <div class="catalog__price-old">18 990₽</div>
+                            <p class="catalog__price-new">16 490₽</p>
+                            <p class="catalog__price-old">18 990₽</p>
                         </div>
                     </a>
                     <div class="catalog__item-hidden">
@@ -703,8 +701,8 @@
                         <p class="catalog__subname">Комоды</p>
                         <p class="catalog__price">8 990₽</p>
                         <div class="catalog__price-box">
-                            <div class="catalog__price-new">6 490₽</div>
-                            <div class="catalog__price-old">8 990₽</div>
+                            <p class="catalog__price-new">6 490₽</p>
+                            <p class="catalog__price-old">8 990₽</p>
                         </div>
                     </a>
                     <div class="catalog__item-hidden">
@@ -734,8 +732,8 @@
                         <p class="catalog__subname">Комоды</p>
                         <p class="catalog__price">14 990₽</p>
                         <div class="catalog__price-box">
-                            <div class="catalog__price-new">8 490₽</div>
-                            <div class="catalog__price-old">14 990₽</div>
+                            <p class="catalog__price-new">8 490₽</p>
+                            <p class="catalog__price-old">14 990₽</p>
                         </div>
                     </a>
                     <div class="catalog__item-hidden">
@@ -762,19 +760,19 @@
                     <h3>Навигация</h3>
                     <div class="footer__navigation">
                         <div>
-                            <a href="#">Кухни</a>
-                            <a href="#">Спальни</a>
-                            <a href="#">Гостинные</a>
+                            <a class="footer__category-link" href="#">Кухни</a>
+                            <a class="footer__category-link" href="#">Спальни</a>
+                            <a class="footer__category-link" href="#">Гостинные</a>
                         </div>
                         <div>
-                            <a href="#">Прихожие</a>
-                            <a href="#">Офисная мебель</a>
-                            <a href="#">Детская</a>
+                            <a class="footer__category-link" href="#">Прихожие</a>
+                            <a class="footer__category-link" href="#">Офисная мебель</a>
+                            <a class="footer__category-link" href="#">Детская</a>
                         </div>
                         <div>
-                            <a class="" href="#">Шкафы</a>
-                            <a class="" href="#">Матрасы</a>
-                            <a class="" href="#">Мягкая мебель</a>
+                            <a class="footer__category-link" class="" href="#">Шкафы</a>
+                            <a class="footer__category-link" class="" href="#">Матрасы</a>
+                            <a class="footer__category-link" class="" href="#">Мягкая мебель</a>
                         </div>
                     </div>
                 </div>
@@ -788,8 +786,8 @@
             </div>
             <div class="footer__contacts">
                 <div class="footer__contacts-stock">
-                    <a href="#"><span>Акция</span></a>
-                    <a href="#">Новинки</a>
+                    <a class="footer__contacts-item" href="#"><span>Акция</span></a>
+                    <a class="footer__contacts-item" href="#">Новинки</a>
                 </div>
                 <div class="footer__contacts-social">
                     <a class="footer__contacts-phone" href="tel:+79648999119">

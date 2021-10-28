@@ -56,12 +56,11 @@
         padding: 8px 10px;
     }
 
-
-    &__grade {
-        img {
-            width: 15px;
-            height: 14px;
-        }
+    &__info {
+       z-index: 0;
+    }
+    .jq-ry-container{
+        padding: 0;
     }
 
     &__name,

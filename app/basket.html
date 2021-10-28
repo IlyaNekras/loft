@@ -23,9 +23,9 @@
                 </div>
                 <nav>
                     <ul class="menu__items">
-                        <li class="menu__item"><a href="http://localhost:3000/">Главная</a></li>
-                        <li class="menu__item"><a href="http://127.0.0.1:5500/app/about.html">О нас</a></li>
-                        <li class="menu__item"><a href="http://127.0.0.1:5500/app/contacts.html">Контакты</a></li>
+                        <li><a class="menu__item-link" href="http://localhost:3000/">Главная</a></li>
+                        <li><a class="menu__item-link" href="http://127.0.0.1:5500/app/about.html">О нас</a></li>
+                        <li><a class="menu__item-link" href="http://127.0.0.1:5500/app/contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="menu__search">
@@ -237,8 +237,10 @@
                     </li>
                     <li class="menu__category">
                         <div class="menu__category-item">
-                            <img class="menu__category-iconblack" src="icons/childrensroom-icon.svg" alt="childrensroom">
-                            <img class="menu__category-iconwhite" src="icons/childrensroom-white.svg" alt="childrensroom">
+                            <img class="menu__category-iconblack" src="icons/childrensroom-icon.svg"
+                                alt="childrensroom">
+                            <img class="menu__category-iconwhite" src="icons/childrensroom-white.svg"
+                                alt="childrensroom">
                             <a class="menu__category-descr">Детская</a>
                         </div>
                         <ul class="menu__category-links">
@@ -294,8 +296,9 @@
     <div class="breadcrumbs">
         <div class="container">
             <ul class="breadcrumbs-list">
-                <li class="breadcrumbs-list__item"><a href="http://localhost:3000/">Главная</a></li>
-                <li class="breadcrumbs-list__item"><span>Корзина</span></li>
+                <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link"
+                        href="http://localhost:3000/">Главная</a></li>
+                <li class="breadcrumbs-list__item"><span class="breadcrumbs-list__link">Корзина</span></li>
             </ul>
         </div>
     </div>
@@ -332,7 +335,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="basket__item-price">16 990₽</div>
+                        <div class="basket__price-box">
+                            <p class="basket__price">16 990₽</p>
+                            <div class="basket__price-item">
+                                <img class="basket__icon-percent" src="icons/vector.svg" alt="vector">
+                                <p class="basket__text-percent">-25%</p>
+                                <p class="basket__price-old">16 990₽</p>
+                                <p class="basket__price-new">14 490₽</p>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -341,7 +352,7 @@
                     <span></span>
                 </div>
             </div>
-            <div class="basket__item">
+            <div class="basket__item basket__item-sale">
                 <div class="basket__item-content">
                     <div class="basket__item-img">
                         <img src="img/furniture/dresser1.png" alt="dresser1">
@@ -369,10 +380,13 @@
                             </div>
                         </div>
                         <div class="basket__price-box">
-                            <img class="basket__icon-percent" src="icons/vector.svg" alt="vector">
-                            <p class="basket__text-percent">-25%</p>
-                            <div class="basket__price-old">37 990₽</div>
-                            <div class="basket__price-new">28 490₽</div>
+                            <p class="basket__price">37 990₽</p>
+                            <div class="basket__price-item">
+                                <img class="basket__icon-percent" src="icons/vector.svg" alt="vector">
+                                <p class="basket__text-percent">-25%</p>
+                                <p class="basket__price-old">37 990₽</p>
+                                <p class="basket__price-new">28 490₽</p>
+                            </div>
                         </div>
                     </div>
 
@@ -409,7 +423,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="basket__item-price">18 990₽</div>
+                        <div class="basket__price-box">
+                            <p class="basket__price">18 990₽</p>
+                            <div class="basket__price-item">
+                                <img class="basket__icon-percent" src="icons/vector.svg" alt="vector">
+                                <p class="basket__text-percent">-25%</p>
+                                <p class="basket__price-old">18 990₽</p>
+                                <p class="basket__price-new">15 490₽</p>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -445,7 +467,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="basket__item-price">21 990₽</div>
+                        <div class="basket__price-box">
+                            <p class="basket__price">21 990₽</p>
+                            <div class="basket__price-item">
+                                <img class="basket__icon-percent" src="icons/vector.svg" alt="vector">
+                                <p class="basket__text-percent">-25%</p>
+                                <p class="basket__price-old">21 990₽</p>
+                                <p class="basket__price-new">18 490₽</p>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -457,7 +487,7 @@
             <div class="basket__total">
                 <div class="basket__total-box">
                     <p>Итоговая стоимость:</p>
-                    <div class="basket__total-price">86 460₽</div>
+                    <p class="basket__total-price">86 460₽</p>
                     <button class="basket__total-btn">Оформить заказ</button>
                 </div>
             </div>
@@ -465,6 +495,12 @@
                 <h3>Вам может понравиться</h3>
 
             </div>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="container">
+
+            <p>Хиты продаж</p>
             <div class="catalog__items">
                 <div class="catalog__item">
                     <button class="heart-icon"></button>
@@ -478,8 +514,8 @@
                         <p class="catalog__subname">Барные стулья</p>
                         <p class="catalog__price">2 300₽</p>
                         <div class="catalog__price-box">
-                            <div class="catalog__price-new">28 490₽</div>
-                            <div class="catalog__price-old">37 990₽</div>
+                            <p class="catalog__price-new">28 490₽</p>
+                            <p class="catalog__price-old">37 990₽</p>
                         </div>
                     </a>
                     <div class="catalog__item-hidden">
@@ -509,8 +545,8 @@
                         <p class="catalog__subname">Барные стулья</p>
                         <p class="catalog__price">4 690₽</p>
                         <div class="catalog__price-box">
-                            <div class="catalog__price-new">3 690₽</div>
-                            <div class="catalog__price-old">4 690₽</div>
+                            <p class="catalog__price-new">3 690₽</p>
+                            <p class="catalog__price-old">4 690₽</p>
                         </div>
                     </a>
                     <div class="catalog__item-hidden">
@@ -540,8 +576,8 @@
                         <p class="catalog__subname">Диваны</p>
                         <p class="catalog__price">37 990₽</p>
                         <div class="catalog__price-box">
-                            <div class="catalog__price-new">28 490₽</div>
-                            <div class="catalog__price-old">37 990₽</div>
+                            <p class="catalog__price-new">28 490₽</p>
+                            <p class="catalog__price-old">37 990₽</p>
                         </div>
                     </a>
                     <div class="catalog__item-hidden">
@@ -571,8 +607,8 @@
                         <p class="catalog__subname">Диваны</p>
                         <p class="catalog__price">37 990₽</p>
                         <div class="catalog__price-box">
-                            <div class="catalog__price-new">28 490₽</div>
-                            <div class="catalog__price-old">37 990₽</div>
+                            <p class="catalog__price-new">28 490₽</p>
+                            <p class="catalog__price-old">37 990₽</p>
                         </div>
                     </a>
                     <div class="catalog__item-hidden">
@@ -602,8 +638,8 @@
                         <p class="catalog__subname">Двухспальные кровати</p>
                         <p class="catalog__price">21 990₽</p>
                         <div class="catalog__price-box">
-                            <div class="catalog__price-new">28 490₽</div>
-                            <div class="catalog__price-old">21 990₽</div>
+                            <p class="catalog__price-new">28 490₽</p>
+                            <p class="catalog__price-old">21 990₽</p>
                         </div>
                     </a>
                     <div class="catalog__item-hidden">
@@ -633,8 +669,8 @@
                         <p class="catalog__subname">Буфеты</p>
                         <p class="catalog__price">18 990₽</p>
                         <div class="catalog__price-box">
-                            <div class="catalog__price-new">16 490₽</div>
-                            <div class="catalog__price-old">18 990₽</div>
+                            <p class="catalog__price-new">16 490₽</p>
+                            <p class="catalog__price-old">18 990₽</p>
                         </div>
                     </a>
                     <div class="catalog__item-hidden">
@@ -664,8 +700,8 @@
                         <p class="catalog__subname">Комоды</p>
                         <p class="catalog__price">8 990₽</p>
                         <div class="catalog__price-box">
-                            <div class="catalog__price-new">6 490₽</div>
-                            <div class="catalog__price-old">8 990₽</div>
+                            <p class="catalog__price-new">6 490₽</p>
+                            <p class="catalog__price-old">8 990₽</p>
                         </div>
                     </a>
                     <div class="catalog__item-hidden">
@@ -695,8 +731,8 @@
                         <p class="catalog__subname">Комоды</p>
                         <p class="catalog__price">14 990₽</p>
                         <div class="catalog__price-box">
-                            <div class="catalog__price-new">8 490₽</div>
-                            <div class="catalog__price-old">14 990₽</div>
+                            <p class="catalog__price-new">8 490₽</p>
+                            <p class="catalog__price-old">14 990₽</p>
                         </div>
                     </a>
                     <div class="catalog__item-hidden">
@@ -715,11 +751,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-
     </section>
-
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
@@ -727,19 +759,19 @@
                     <h3>Навигация</h3>
                     <div class="footer__navigation">
                         <div>
-                            <a href="#">Кухни</a>
-                            <a href="#">Спальни</a>
-                            <a href="#">Гостинные</a>
+                            <a class="footer__category-link" href="#">Кухни</a>
+                            <a class="footer__category-link" href="#">Спальни</a>
+                            <a class="footer__category-link" href="#">Гостинные</a>
                         </div>
                         <div>
-                            <a href="#">Прихожие</a>
-                            <a href="#">Офисная мебель</a>
-                            <a href="#">Детская</a>
+                            <a class="footer__category-link" href="#">Прихожие</a>
+                            <a class="footer__category-link" href="#">Офисная мебель</a>
+                            <a class="footer__category-link" href="#">Детская</a>
                         </div>
                         <div>
-                            <a class="" href="#">Шкафы</a>
-                            <a class="" href="#">Матрасы</a>
-                            <a class="" href="#">Мягкая мебель</a>
+                            <a class="footer__category-link" class="" href="#">Шкафы</a>
+                            <a class="footer__category-link" class="" href="#">Матрасы</a>
+                            <a class="footer__category-link" class="" href="#">Мягкая мебель</a>
                         </div>
                     </div>
                 </div>
@@ -753,8 +785,8 @@
             </div>
             <div class="footer__contacts">
                 <div class="footer__contacts-stock">
-                    <a href="#"><span>Акция</span></a>
-                    <a href="#">Новинки</a>
+                    <a class="footer__contacts-item" href="#"><span>Акция</span></a>
+                    <a class="footer__contacts-item" href="#">Новинки</a>
                 </div>
                 <div class="footer__contacts-social">
                     <a class="footer__contacts-phone" href="tel:+79648999119">

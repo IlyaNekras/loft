@@ -1,24 +1,26 @@
 .about {
     padding: 18px 10px 50px;
     position: relative;
-    h2{
+
+    h2 {
         text-align: start;
     }
+
     &__box {
-        width: 422px;
+        width: 286px;
         height: 500px;
-        background-color: #D7E8ED;
+        background-color: #d7e8ed;
         position: absolute;
-        right: 0;
-        top: 18px;
+        right: 15px;
+        bottom: 0px;
         z-index: -1;
     }
 
     span {
         position: absolute;
-        left: 0;
-        top: 126px;
-        width: 182px;
+        left: 15px;
+        top: 6px;
+        width: 77px;
         height: 1px;
         background-color: #D7E8ED;
     }

@@ -2,8 +2,11 @@
     padding-bottom: 40px;
 
     &-list {
-        &__item {
+        li {
             display: inline-block;
+        }
+
+        &__item {
             position: relative;
             padding-right: 10px;
             margin-right: 5px;
@@ -12,7 +15,7 @@
             cursor: pointer;
         }
 
-        &__item::after {
+        &__item +  &__item::before {
             content: '/';
             width: 100%;
             height: 100%;
@@ -20,11 +23,12 @@
             top: 0;
             right: 10px;
         }
-        &__item:first-child::after{
-            display: none;
-        }
-        &__item:hover{
+
+        &__item:hover {
             text-decoration: underline;
+        }
+        &__link{
+            color: $text-color;
         }
     }
 }

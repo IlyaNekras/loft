@@ -23,9 +23,9 @@
                 </div>
                 <nav>
                     <ul class="menu__items">
-                        <li class="menu__item"><a href="http://localhost:3000/">Главная</a></li>
-                        <li class="menu__item"><a href="http://127.0.0.1:5500/app/about.html">О нас</a></li>
-                        <li class="menu__item"><a href="http://127.0.0.1:5500/app/contacts.html">Контакты</a></li>
+                        <li><a class="menu__item-link" href="http://localhost:3000/">Главная</a></li>
+                        <li><a class="menu__item-link" href="http://127.0.0.1:5500/app/about.html">О нас</a></li>
+                        <li><a class="menu__item-link" href="http://127.0.0.1:5500/app/contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="menu__search">
@@ -237,8 +237,10 @@
                     </li>
                     <li class="menu__category">
                         <div class="menu__category-item">
-                            <img class="menu__category-iconblack" src="icons/childrensroom-icon.svg" alt="childrensroom">
-                            <img class="menu__category-iconwhite" src="icons/childrensroom-white.svg" alt="childrensroom">
+                            <img class="menu__category-iconblack" src="icons/childrensroom-icon.svg"
+                                alt="childrensroom">
+                            <img class="menu__category-iconwhite" src="icons/childrensroom-white.svg"
+                                alt="childrensroom">
                             <a class="menu__category-descr">Детская</a>
                         </div>
                         <ul class="menu__category-links">
@@ -293,16 +295,18 @@
     </header>
 
     <section class="about">
-        <span></span>
-        <div class="about__box">
-        </div>
+
+
         <div class="container">
             <div class="about__wrap">
+                <span></span>
+                <div class="about__box">
+                </div>
                 <div class="about__store">
                     <p>О магазине</p>
                     <h2 class="title">Интернет-магазин «Лофт Мебель»: купите хорошую
                         мебель в один клик!</h2>
-                    <div class="about__descr">
+                    <p class="about__descr">
                         Уникальный формат интернет-магазина позволит вам купить лучшую
                         мебель крупнейших российских фабрик максимально быстро и по
                         выгодной цене!
@@ -313,7 +317,7 @@
                         российском интернет-пространстве. Прямые договоры на поставку
                         мебели с фабрик обеспечивают наиболее привлекательные условия для
                         наших покупателей.
-                    </div>
+                    </p>
                 </div>
                 <div class="about__img">
 
@@ -329,40 +333,40 @@
                 <div class="condition__item">
                     <img class="condition__img" src="icons/profit.svg" alt="profit">
                     <div class="condition__box">
-                        <div class="subtitle">Лучшая цена</div>
-                        <div class="condition__descr">Предлагаем близкие к оптовым цены, которые дают возможность
+                        <p class="subtitle">Лучшая цена</p>
+                        <p class="condition__descr">Предлагаем близкие к оптовым цены, которые дают возможность
                             приобретать
-                            мебель дешевле, чем в розничных салонах и шоу-румах.</div>
+                            мебель дешевле, чем в розничных салонах и шоу-румах.</p>
                     </div>
                 </div>
 
                 <div class="condition__item">
                     <img class="condition__img" src="icons/car.svg" alt="car">
                     <div class="condition__box">
-                        <div class="subtitle">Прямые поставки</div>
-                        <div class="condition__descr">С ведущих мебельных фабрик уменьшают срок
+                        <p class="subtitle">Прямые поставки</p>
+                        <p class="condition__descr">С ведущих мебельных фабрик уменьшают срок
                             выполнения вашего заказа, даже если речь идет об изготовлении предметов по
                             индивидуальному проекту.
-                        </div>
+                        </p>
                     </div>
 
                 </div>
                 <div class="condition__item">
                     <img class="condition__img" src="icons/time.svg" alt="time">
                     <div class="condition__box">
-                        <div class="subtitle">Экономие времени</div>
-                        <div class="condition__descr">Не нашли оптимальный вариант или нет
+                        <p class="subtitle">Экономие времени</p>
+                        <p class="condition__descr">Не нашли оптимальный вариант или нет
                             времени на поиски? Оставьте онлайн-заявку с критериями, и мы предложим вам
-                            несколько достойных образцов.</div>
+                            несколько достойных образцов.</p>
                     </div>
                 </div>
                 <div class="condition__item"">
                     <img class=" condition__img" src="icons/production.svg" alt="production">
                     <div class="condition__box">
-                        <div class="subtitle">Изготовление на заказ</div>
-                        <div class="condition__descr">Принимаем заявки на изготовление
+                        <p class="subtitle">Изготовление на заказ</p>
+                        <p class="condition__descr">Принимаем заявки на изготовление
                             мебели по персональному дизайн-проекту от покупателей из любой точки России.
-                            Просим быть готовыми к авансированной оплате персональных заказов.</div>
+                            Просим быть готовыми к авансированной оплате персональных заказов.</p>
                     </div>
                 </div>
             </div>
@@ -371,32 +375,32 @@
     <div class="benefit">
         <div class="container">
             <div class="benefit__item">
-                <div class="subtitle">Самые «вкусные» предложения</div>
+                <p class="subtitle">Самые «вкусные» предложения</p>
                 <span></span>
-                <div class="benefit__descr">Мы делаем всё
+                <p class="benefit__descr">Мы делаем всё
                     необходимое, чтобы покупатели получали доступ к актуальным новинкам, которые
                     представляет российский мебельный рынок. Познакомиться с каждой моделью,
                     сравнить цены на аналоги и выбрать лучшее вы можете прямо сейчас. Хотите
                     первыми узнавать о самых выгодных предложениях? Тогда подписывайтесь на
-                    информационную рассылку!</div>
+                    информационную рассылку!</p>
             </div>
             <div class="benefit__item">
-                <div class="subtitle">Гарантированное качество</div>
+                <p class="subtitle">Гарантированное качество</p>
                 <span></span>
-                <div class="benefit__descr">Вся продукция сопровождается
+                <p class="benefit__descr">Вся продукция сопровождается
                     гарантией производителя. В каталогах представлена только сертифицированная
                     мебель. Собственный контроль качества тщательно проверяет каждый образец
                     перед отправкой заказчику. Покупатели получают необходимые документы –
-                    гарантийный талон и чек.</div>
+                    гарантийный талон и чек.</p>
             </div>
             <div class="benefit__item">
-                <div class="subtitle">Впечатляющий ассортимент</div>
+                <p class="subtitle">Впечатляющий ассортимент</p>
                 <span></span>
-                <div class="benefit__descr">Ежедневно мы выбираем для
+                <p class="benefit__descr">Ежедневно мы выбираем для
                     наших каталогов идеальные образцы из товарной матрицы производителей по всей
                     России. Модные расцветки, экологически безопасные материалы, надежные
                     комплектующие – у нас вы найдете мебель своей мечты!
-                </div>
+                </p>
             </div>
         </div>
     </div>
@@ -429,7 +433,7 @@
 
                     <div class="advantage__img">
                         <img src="icons/support.svg" alt="support"> </div>
-                    <div class="subtitle">Внимательный сервис</div>
+                    <p class="subtitle">Внимательный сервис</p>
                     <div class="advantage__descr">
                         <p>Квалифицированные менеджеры
                             интернет-магазина ответят на все вопросы по ассортименту и предоставляемым
@@ -441,8 +445,8 @@
                     <div class="advantage__img">
                         <img src="icons/arrow.svg" alt="arrow">
                     </div>
-                    <div class="subtitle">Каждый пятый покупатель заказывает у нас
-                        повторно! </div>
+                    <p class="subtitle">Каждый пятый покупатель заказывает у нас
+                        повторно! </p>
                     <div class="advantage__descr">
                         <p>И мы благодарим всех, кто воспользовался нашим уникальным
                             предложением,
@@ -454,7 +458,7 @@
     </div>
     <div class="saving">
         <div class="container">
-            <div class="title">Мы поможем сэкономить время, силы и деньги!</div>
+            <p class="title">Мы поможем сэкономить время, силы и деньги!</p>
             <div class="saving__items">
                 <div class="saving__item">
                     <img src="icons/check.svg" alt="check">
@@ -491,19 +495,19 @@
                     <h3>Навигация</h3>
                     <div class="footer__navigation">
                         <div>
-                            <a href="#">Кухни</a>
-                            <a href="#">Спальни</a>
-                            <a href="#">Гостинные</a>
+                            <a class="footer__category-link" href="#">Кухни</a>
+                            <a class="footer__category-link" href="#">Спальни</a>
+                            <a class="footer__category-link" href="#">Гостинные</a>
                         </div>
                         <div>
-                            <a href="#">Прихожие</a>
-                            <a href="#">Офисная мебель</a>
-                            <a href="#">Детская</a>
+                            <a class="footer__category-link" href="#">Прихожие</a>
+                            <a class="footer__category-link" href="#">Офисная мебель</a>
+                            <a class="footer__category-link" href="#">Детская</a>
                         </div>
                         <div>
-                            <a class="" href="#">Шкафы</a>
-                            <a class="" href="#">Матрасы</a>
-                            <a class="" href="#">Мягкая мебель</a>
+                            <a class="footer__category-link" class="" href="#">Шкафы</a>
+                            <a class="footer__category-link" class="" href="#">Матрасы</a>
+                            <a class="footer__category-link" class="" href="#">Мягкая мебель</a>
                         </div>
                     </div>
                 </div>
@@ -517,8 +521,8 @@
             </div>
             <div class="footer__contacts">
                 <div class="footer__contacts-stock">
-                    <a href="#"><span>Акция</span></a>
-                    <a href="#">Новинки</a>
+                    <a class="footer__contacts-item" href="#"><span>Акция</span></a>
+                    <a class="footer__contacts-item" href="#">Новинки</a>
                 </div>
                 <div class="footer__contacts-social">
                     <a class="footer__contacts-phone" href="tel:+79648999119">

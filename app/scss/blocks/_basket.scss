@@ -38,6 +38,10 @@
         position: relative;
         cursor: pointer;
 
+        &:hover {
+            background-color: rgba(240, 240, 240, 0.9);
+        }
+
         span {
             position: absolute;
             top: 50%;
@@ -165,6 +169,19 @@
         background-color: #6F6C67;
     }
 
+    &__price-item {
+        display: none;
+    }
+
+    &__item-sale &__price-item {
+        display: flex;
+    }
+
+    &__item-sale &__price {
+        display: none;
+    }
+
+
     &__total-box {
         margin-top: 40px;
         display: flex;
@@ -194,13 +211,15 @@
         color: #fff;
         cursor: pointer;
         border: none;
-        &:hover{
-            background-color: rgba(36, 84, 98, .9);
 
+        &:hover {
+            background-color: rgba(36, 84, 98, .9);
         }
     }
-    &__bottom{
+
+    &__bottom {
         margin-top: 100px;
+
         h3 {
             font-weight: 400;
             font-size: 16px;

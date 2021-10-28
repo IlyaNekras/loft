@@ -23,9 +23,9 @@
                 </div>
                 <nav>
                     <ul class="menu__items">
-                        <li class="menu__item"><a href="http://localhost:3000/">Главная</a></li>
-                        <li class="menu__item"><a href="http://127.0.0.1:5500/app/about.html">О нас</a></li>
-                        <li class="menu__item"><a href="http://127.0.0.1:5500/app/contacts.html">Контакты</a></li>
+                        <li><a class="menu__item-link" href="http://localhost:3000/">Главная</a></li>
+                        <li><a class="menu__item-link" href="http://127.0.0.1:5500/app/about.html">О нас</a></li>
+                        <li><a class="menu__item-link" href="http://127.0.0.1:5500/app/contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="menu__search">
@@ -237,8 +237,10 @@
                     </li>
                     <li class="menu__category">
                         <div class="menu__category-item">
-                            <img class="menu__category-iconblack" src="icons/childrensroom-icon.svg" alt="childrensroom">
-                            <img class="menu__category-iconwhite" src="icons/childrensroom-white.svg" alt="childrensroom">
+                            <img class="menu__category-iconblack" src="icons/childrensroom-icon.svg"
+                                alt="childrensroom">
+                            <img class="menu__category-iconwhite" src="icons/childrensroom-white.svg"
+                                alt="childrensroom">
                             <a class="menu__category-descr">Детская</a>
                         </div>
                         <ul class="menu__category-links">
@@ -294,12 +296,8 @@
     <div class="breadcrumbs">
         <div class="container">
             <ul class="breadcrumbs-list">
-                <li class="breadcrumbs-list__item">
-                    <a href="http://localhost:3000/">Главная</a>
-                </li>
-                <li class="breadcrumbs-list__item">
-                    <span>Контакты</span>
-                </li>
+                <li class="breadcrumbs-list__item"><a class="breadcrumbs-list__link" href="http://localhost:3000/">Главная</a></li>
+                <li class="breadcrumbs-list__item"><span class="breadcrumbs-list__link">Контакты</span></li>
             </ul>
         </div>
     </div>
@@ -357,19 +355,19 @@
                     <h3>Навигация</h3>
                     <div class="footer__navigation">
                         <div>
-                            <a href="#">Кухни</a>
-                            <a href="#">Спальни</a>
-                            <a href="#">Гостинные</a>
+                            <a class="footer__category-link" href="#">Кухни</a>
+                            <a class="footer__category-link" href="#">Спальни</a>
+                            <a class="footer__category-link" href="#">Гостинные</a>
                         </div>
                         <div>
-                            <a href="#">Прихожие</a>
-                            <a href="#">Офисная мебель</a>
-                            <a href="#">Детская</a>
+                            <a class="footer__category-link" href="#">Прихожие</a>
+                            <a class="footer__category-link" href="#">Офисная мебель</a>
+                            <a class="footer__category-link" href="#">Детская</a>
                         </div>
                         <div>
-                            <a class="" href="#">Шкафы</a>
-                            <a class="" href="#">Матрасы</a>
-                            <a class="" href="#">Мягкая мебель</a>
+                            <a class="footer__category-link" class="" href="#">Шкафы</a>
+                            <a class="footer__category-link" class="" href="#">Матрасы</a>
+                            <a class="footer__category-link" class="" href="#">Мягкая мебель</a>
                         </div>
                     </div>
                 </div>
@@ -383,8 +381,8 @@
             </div>
             <div class="footer__contacts">
                 <div class="footer__contacts-stock">
-                    <a href="#"><span>Акция</span></a>
-                    <a href="#">Новинки</a>
+                    <a class="footer__contacts-item" href="#"><span>Акция</span></a>
+                    <a class="footer__contacts-item" href="#">Новинки</a>
                 </div>
                 <div class="footer__contacts-social">
                     <a class="footer__contacts-phone" href="tel:+79648999119">
