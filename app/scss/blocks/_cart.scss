@@ -57,9 +57,10 @@
     }
 
     &__info {
-       z-index: 0;
+        z-index: 0;
     }
-    .jq-ry-container{
+
+    .jq-ry-container {
         padding: 0;
     }
 
@@ -98,7 +99,7 @@
         border: none;
         cursor: pointer;
         font-size: 13px;
-        margin-left: 22px;
+        margin-left: 18px;
 
         &:hover {
             background-color: rgba(36, 84, 98, .9);
@@ -107,7 +108,7 @@
 
     &__icon.heart-icon {
         top: 10px;
-        right: 148px;
+        right: 115px;
 
         span {
             margin-left: 32px;
@@ -148,14 +149,20 @@
         margin-top: 18px;
         font-size: 12px;
         color: $main-color;
+        position: relative;
+
+        select option[value="red"] {
+            background-color: rgba(100, 100, 100, 0.3);
+        }
+        select option[value="green"] {
+            background-color: rgba(233, 100, 100, 0.3);
+        }
 
         .cart-options__char .jq-selectbox__select {
             width: 100%;
             padding: 0 10px;
         }
 
-        &__colors,
-        &__color,
         &__num {
             width: 30px;
             margin-right: 45px;
@@ -184,9 +191,10 @@
             text-shadow: none;
             text-align: center;
         }
+
         .jq-selectbox li:hover,
         .sel.selected {
-            background-color: rgba(163, 171, 177, .6);
+            background-color: rgba(163, 171, 177, .3);
             color: #000;
         }
 
@@ -221,14 +229,22 @@
             font-size: 14px;
         }
 
+        // .jq-selectbox.jqselect.cart-options__select.filters-style.focused.cart-options__color-1 {
+        //     background-color: red;
+        // }
+
+        .cart-options__color-1.sel.selected .jq-selectbox__select-text {
+            background-color: green;
+        }
+
         .jq-selectbox.focused .jq-selectbox__select {
             border: none;
         }
 
         .jq-selectbox__dropdown {
             position: absolute;
-            // width: 30px;
             margin: 0;
+            top: 55px;
             padding: 0;
             border: none;
             border-radius: 0;
@@ -309,7 +325,7 @@
     }
 
     &__left-content {
-        width: 60%;
+        width: 70%;
     }
 
     &__right-content {

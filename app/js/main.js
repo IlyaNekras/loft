@@ -1,26 +1,10 @@
 window.addEventListener('DOMContentLoaded', () => {
-    $('.carousel__inner').slick({
-        speed: 1200,
-        adaptiveHeight: true,
-        prevArrow: '<button type="button" class="prev"><img src="icons/arrow-slider.svg"></button>',
-        nextArrow: '<button type="button" class="next"><img src="icons/arrow-slider.svg"></button>',
-        // responsive: [
-        //   {
-        //     breakpoint: 992,
-        //     settings: {
-        //       dots: true,
-        //       arrows: false
-        //     }
-        //   }
-        // ]
-    });
 
-
-
+    
     //показать/скрыть элементы категорий
 
     let listHidden = document.querySelector('.menu__category-list'),
-        liItem = document.querySelectorAll('.menu__category-li');
+        liItem = document.querySelectorAll('.menu__category-link');
 
     document.addEventListener('click', menu);
 
@@ -41,27 +25,45 @@ window.addEventListener('DOMContentLoaded', () => {
 
     });
 
-    //показать скрыть элементы
-    let listHid = document.querySelector('.catalog__sort-list'),
-        listItem = document.querySelectorAll('.menu__category-li');
+    //сортировка карточки товара
+
+    let sortList = document.querySelector('.catalog__sort-list'),
+        sortItem = document.querySelectorAll('.catalog__sort-item');
 
     document.addEventListener('click', button);
 
     function button(event) {
         if (event.target.closest('.catalog__sort-btn')) {
-            listHid.classList.toggle('catalog__sort-list_active');
+            sortList.classList.toggle('catalog__sort-list_active');
         }
         if (!event.target.closest('.catalog__sort-btn')) {
-            listHid.classList.remove('catalog__sort-list_active');
+            sortList.classList.remove('catalog__sort-list_active');
         }
     }
 
-
-    listItem.forEach(function (el) {
+    sortItem.forEach(function (el) {
         el.addEventListener('click', function () {
-            listHid.classList.remove('catalog__sort-list_active');
+            sortList.classList.remove('catalog__sort-list_active');
         });
 
+    });
+
+    //слайдер главной страницы
+
+    $('.carousel__inner').slick({
+        speed: 1200,
+        adaptiveHeight: true,
+        prevArrow: '<button type="button" class="prev"><img src="icons/arrow-slider.svg"></button>',
+        nextArrow: '<button type="button" class="next"><img src="icons/arrow-slider.svg"></button>',
+        // responsive: [
+        //   {
+        //     breakpoint: 992,
+        //     settings: {
+        //       dots: true,
+        //       arrows: false
+        //     }
+        //   }
+        // ]
     });
 
     //слайдер карточки товара
@@ -88,26 +90,7 @@ window.addEventListener('DOMContentLoaded', () => {
         focusOnSelect: true
     });
 
-    //показ дополнительных цветов товара
-
-    // let colorImg = document.querySelector('.cart__color-img'),
-    //     colorAct = document.querySelector('.cart__color');
-
-    // colorImg.addEventListener('click', function () {
-    //     colorAct.classList.toggle('cart__color_active');
-    // });
-
-
-    //показ количества товара
-
-    // let numImg = document.querySelector('.cart__number-img'),
-    //     numAct = document.querySelector('.cart__number');
-
-    // numImg.addEventListener('click', function () {
-    //     numAct.classList.toggle('cart__number_active');
-    // });
-
-
+    
     //табы
 
     $('.cart__item').on('click', function (e) {
@@ -122,13 +105,14 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    //favorit icon active
+    //активность сердечка
 
     $('.heart-icon').on('click', function () {
         $(this).toggleClass('heart-icon_active');
     });
 
-    //range slider
+    //слайдер значения цены
+
     $(".catalog-filters__range-item").ionRangeSlider({
         postfix: " ₽",
     });
@@ -142,5 +126,8 @@ window.addEventListener('DOMContentLoaded', () => {
         starWidth: "15px",
         normalFill: "#D1D1D1",
         ratedFill: "#000",
+        spasing: "3px",
     });
+
+
 });
