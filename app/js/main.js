@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-    
+
     //показать/скрыть элементы категорий
 
     let listHidden = document.querySelector('.menu__category-list'),
@@ -24,6 +24,39 @@ window.addEventListener('DOMContentLoaded', () => {
         });
 
     });
+
+
+    //скрыть/показать меню
+
+    let burger = document.querySelector('.menu__burger'),
+        menuContent = document.querySelector('.menu-content'),
+        exitBtn = document.querySelector('.menu-content__exit'),
+        menuLink = document.querySelectorAll('.menu-content__link');
+
+    document.addEventListener('click', menuItems);
+
+    function menuItems(event) {
+        if (event.target.closest('.menu__burger')) {
+            menuContent.classList.toggle('menu-content_active');
+        }
+        if (!event.target.closest('.menu__burger')) {
+            menuContent.classList.remove('menu-content_active');
+        }
+    }
+    // burger.addEventListener('click', function () {
+    //     menuContent.classList.toggle('menu-content_active');
+    // });
+    exitBtn.addEventListener('click', function () {
+        menuContent.classList.toggle('menu-content_active');
+    });
+
+    menuLink.forEach(i => {
+        i.addEventListener('click', function () {
+            menuContent.classList.toggle('menu-content_active');
+        });
+    });
+
+
 
     //сортировка карточки товара
 
@@ -90,7 +123,7 @@ window.addEventListener('DOMContentLoaded', () => {
         focusOnSelect: true
     });
 
-    
+
     //табы
 
     $('.cart__item').on('click', function (e) {

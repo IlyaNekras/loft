@@ -359,7 +359,7 @@
         position: relative;
         margin-top: 35px;
         padding: 0 20px 32px;
-        width: 263px;
+        max-width: 263px;
 
         &-hidden {
             display: none;

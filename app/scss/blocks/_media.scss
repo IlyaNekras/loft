@@ -1,3 +1,5 @@
+@media (max-width: 1139px) {}
+
 @media (max-width: 1139px) {
     .menu {
         &__category-box {
@@ -18,37 +20,123 @@
         &__category-stocklist {
             color: #D74444;
         }
-        &__category-item_img{
+
+        &__category-item_img {
             margin-left: 0;
         }
     }
 }
 
 @media (max-width: 1099px) {
+    nav {
+        display: none;
+    }
+
+    .menu {
+        &__burger {
+            display: block;
+        }
+
+        &__wrapper {
+            margin-left: 45px;
+        }
+
+        &__search {
+            margin: 0 20px;
+        }
+
+        &__icons-chosen,
+        &__icons-bag,
+        &__icons-profile {
+            padding: 8px 11px;
+        }
+
+        &__icons-bag::before {
+            right: 8px;
+        }
+    }
+}
+
+@media (max-width: 956px) {
     .menu {
         &__phone {
             display: none;
         }
     }
-
 }
+
 @media (max-width: 939px) {
     .menu {
         &__items {
             display: none;
         }
-        // &__search-area{
-        //     margin: 0 40px;
-        // }
-        &__icons-chosen,
-        &__icons-bag,
-        &__icons-profile{
-            padding: 8px 15px;
+
+        &__search {
+            margin: 0 40px;
         }
-        &__category{
+
+        &__category {
             font-size: 14px;
+
+            &-links {
+                font-size: 12px;
+            }
         }
-        
+
+        &__category:hover ul {
+            width: 167px;
+        }
+
+        &__category-box {
+            justify-content: center;
+        }
+
+    }
+
+    @media (max-width: 876px) {
+        .menu {
+            &__category {
+                width: 130px;
+
+            }
+
+            &__category:nth-child(5) {
+                width: 165px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .menu {
+            &__category {
+                &-box {
+                    justify-content: start;
+                }
+            }
+
+        }
+
+        .catalog {
+            &__items {
+                justify-content: space-between;
+            }
+
+            &-item {
+                &__link {
+                    font-size: 14px;
+                }
+            }
+
+            &__img {
+                width: 160px;
+                margin-bottom: 30px;
+            }
+
+            &__price {
+                font-size: 14px;
+            }
+        }
+
     }
 
 }

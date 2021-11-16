@@ -17,6 +17,32 @@
 <body>
     <header class="menu">
         <div class="container">
+            <div class="menu__burger">
+            </div>
+            <div class="menu-content">
+                <div class="menu-content__exit"></div>
+                <ul class="menu-content__list">
+                    <li>
+                        <div class="menu-content__item">Меню</div>
+                    </li>
+                    <li><a href="#" class="menu-content__link">
+                            <img class="menu-content__img" src="icons/home-icon.svg" alt="home">
+                            <p class="menu-content__text">Главная</p>
+                        </a>
+                    </li>
+                    <li><a href="#" class="menu-content__link">
+                            <img class="menu-content__img" src="icons/info-icon.svg" alt="info">
+                            <p class="menu-content__text">О нас</p>
+                        </a>
+                    </li>
+                    <li><a href="#" class="menu-content__link">
+                            <img class="menu-content__img" src="icons/email-icon.svg" alt="email">
+                            <p class="menu-content__text">Контакты</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
             <div class="menu__wrapper">
                 <div class="menu__logo">
                     <a href="http://localhost:3000/"><img class="menu__logo" src="icons/logo.svg" alt="logo"></a>
@@ -45,10 +71,10 @@
                     <a class="menu__icons-chosen" href="#">
                         <img src="icons/heart-icon.svg" alt="heart">
                     </a>
-                    <a class="menu__icons-bag" href="http://127.0.0.1:5500/app/basket.html">
+                    <a class="menu__icons-bag" href="#">
                         <img src="icons/bag-icon.svg" alt="bag">
                     </a>
-                    <a class="menu__icons-profile" href="http://127.0.0.1:5500/app/cabinet.html">
+                    <a class="menu__icons-profile" href="#">
                         <img src="icons/profile-icon.svg" alt="profile">
                     </a>
                 </div>
@@ -273,16 +299,17 @@
                 <li class="menu__category menu__category-stock">
                     <a class="menu__category-stock menu__category-item" href="#">Акция</a>
                 </li>
-                <div class="menu__category-point"></div><ul class="menu__category-list">
-                <li><a class="menu__category-link menu__category-childlist" href="#">Детская</a></li>
-                <li><a class="menu__category-link menu__category-stocklist" href="#">Акция</a></li>
-                <li><a class="menu__category-link" href="#">Новинки</a></li>
-                <li><a class="menu__category-link" href="#">Матрасы</a></li>
-                <li><a class="menu__category-link" href="#">Шкафы</a></li>
-                <li><a class="menu__category-link" href="#">Мягкая мебель</a></li>
+                <div class="menu__category-point"></div>
+                <ul class="menu__category-list">
+                    <li><a class="menu__category-link menu__category-childlist" href="#">Детская</a></li>
+                    <li><a class="menu__category-link menu__category-stocklist" href="#">Акция</a></li>
+                    <li><a class="menu__category-link" href="#">Новинки</a></li>
+                    <li><a class="menu__category-link" href="#">Матрасы</a></li>
+                    <li><a class="menu__category-link" href="#">Шкафы</a></li>
+                    <li><a class="menu__category-link" href="#">Мягкая мебель</a></li>
+                </ul>
             </ul>
-            </ul>
-            
+
         </div>
         </div>
     </header>
