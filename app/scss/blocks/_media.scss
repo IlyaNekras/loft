@@ -1,5 +1,3 @@
-@media (max-width: 1139px) {}
-
 @media (max-width: 1139px) {
     .menu {
         &__category-box {
@@ -23,6 +21,20 @@
 
         &__category-item_img {
             margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 1101px) {
+    .catalog {
+
+        &__item:hover {
+            box-shadow: none;
+
+        }
+
+        &__item:hover .catalog__item-hidden {
+            display: none;
         }
     }
 }
@@ -55,12 +67,27 @@
             right: 8px;
         }
     }
+
 }
 
 @media (max-width: 956px) {
     .menu {
         &__phone {
             display: none;
+        }
+    }
+
+    .carousel {
+        &__title {
+            margin-top: 50px;
+        }
+
+        &__subtitle {
+            margin-top: 170px;
+        }
+
+        &__catalog-btn {
+            margin-top: 214px;
         }
     }
 }
@@ -84,7 +111,7 @@
         }
 
         &__category:hover ul {
-            width: 167px;
+            max-width: 167px;
         }
 
         &__category-box {
@@ -93,50 +120,284 @@
 
     }
 
-    @media (max-width: 876px) {
-        .menu {
-            &__category {
-                width: 130px;
-
+    .footer {
+        &__navigation {
+            font-size: 12px;
+            min-width: 295px;
+            div{
+                margin: 0 15px;
             }
+        }
 
-            &__category:nth-child(5) {
-                width: 165px;
-            }
+        &__address {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 876px) {
+    .menu {
+        &__category {
+            width: 130px;
+
+        }
+
+        &__category:nth-child(5) {
+            width: 165px;
         }
     }
 
-    @media (max-width: 768px) {
-        .menu {
-            &__category {
-                &-box {
-                    justify-content: start;
-                }
-            }
-
+    .carousel {
+        &__title {
+            font-size: 45px;
         }
+    }
+}
 
-        .catalog {
-            &__items {
-                justify-content: space-between;
-            }
-
-            &-item {
-                &__link {
-                    font-size: 14px;
-                }
-            }
-
-            &__img {
-                width: 160px;
-                margin-bottom: 30px;
-            }
-
-            &__price {
+@media (max-width: 838px) {
+    .catalog {
+        &-item {
+            &__link {
                 font-size: 14px;
             }
         }
 
+        &__img {
+            width: 160px;
+            margin-bottom: 30px;
+        }
+
+        &__price {
+            font-size: 14px;
+        }
+    }
+}
+
+
+
+
+@media (max-width: 787px) {
+    .menu {
+        &__category {
+            &-box {
+                justify-content: start;
+            }
+        }
+
     }
 
+    .carousel {
+        &__title {
+            display: none;
+        }
+
+        &__subtitle {
+            max-width: 291px;
+            margin-top: 71px;
+            margin-left: 43px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        &__catalog-btn {
+            margin-top: 147px;
+            margin-left: 43px;
+            width: 130px;
+            height: 40px;
+            text-transform: none;
+        }
+    }
+
+
+    .carousel .next,
+    .carousel .prev {
+        top: 90%;
+    }
+
+    .carousel .prev {
+        right: 42px;
+        left: auto;
+    }
+
+    .carousel .next {
+        right: 12px;
+    }
+
+    .carousel .next img {
+        right: 12px;
+        position: absolute;
+        top: 10px;
+        left: 11px;
+    }
+
+}
+
+.catalog {
+    &__items {
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 759px) {
+
+    .menu {
+        &__delivery {
+            display: none;
+        }
+
+        &__category {
+            font-size: 12px;
+            width: 120px;
+
+            &:nth-child(5) {
+                width: 148px;
+            }
+        }
+
+        &__category-list {
+            font-size: 12px;
+            width: 136px;
+            padding: 0px 13px;
+        }
+
+    }
+}
+
+@media (max-width: 723px) {
+    .catalog {
+        &__items {
+            justify-content: space-around;
+        }
+    }
+
+    .footer {
+        &__contacts {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 702px) {
+    .menu {
+        &__category-box {
+            box-shadow: none;
+            justify-content: space-between;
+        }
+
+        &__category:hover {
+            background-color: #fff;
+            color: #000;
+
+            ul {
+                display: none;
+            }
+
+            .menu__category-descr {
+                color: #000;
+            }
+
+            .menu__category-iconwhite {
+                display: none;
+            }
+
+            .menu__category-iconblack {
+                display: block;
+            }
+
+        }
+
+        &__category {
+            box-shadow: 0px 2px 4px rgb(0 0 0 / 7%);
+            width: 80px;
+            height: 80px;
+            margin-right: 7px;
+            text-align: center;
+
+            &:nth-child(5) {
+                width: 80px;
+            }
+
+            &-item {
+                display: inline-block;
+                margin-top: 17px;
+            }
+
+            &-iconblack {
+                padding: 0 11px;
+                display: inherit;
+                margin: 0 auto;
+                margin-bottom: 5px;
+            }
+
+            &-iconwhite {
+                display: none;
+            }
+
+            &-descr {
+                margin: 0 auto;
+            }
+
+            &-point {
+                display: none;
+            }
+        }
+    }
+    .carousel .next, .carousel .prev {
+        top: 88%;
+    }
+    .carousel{
+        &__subtitle{
+            margin-top: 55px;
+        }
+        &__catalog-btn {
+            margin-top: 130px;
+        }
+    }
+    
+
+}
+
+@media (max-width: 640px) {
+    .menu {
+        &__search {
+            margin: 0 10px;
+        }
+        &__icons-chosen,
+        &__icons-bag,
+        &__icons-profile {
+            padding: 8px;
+        }
+    }
+
+    .carousel{
+        &__subtitle{
+            margin-top: 50px;
+        }
+        &__catalog-btn {
+            margin-top: 120px;
+        }
+    }
+   
+
+    .footer {
+        min-height: 167px;
+
+        &__contacts {
+            display: none;
+        }
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .carousel{
+        &__subtitle{
+            margin-top: 45px;
+        }
+        &__catalog-btn {
+            margin-top: 110px;
+        }
+    }
 }

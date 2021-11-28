@@ -7,8 +7,8 @@
         height: 100%;
     }
     &__img{
-        object-fit: cover;
-        max-height: 450px;
+        max-width: 100%;
+        height: auto;
     }
     .prev, .next{
         width: 30px;
