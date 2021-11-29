@@ -88,15 +88,14 @@ window.addEventListener('DOMContentLoaded', () => {
         adaptiveHeight: true,
         prevArrow: '<button type="button" class="prev"><img src="icons/arrow-slider.svg"></button>',
         nextArrow: '<button type="button" class="next"><img src="icons/arrow-slider.svg"></button>',
-        // responsive: [
-        //   {
-        //     breakpoint: 992,
-        //     settings: {
-        //       dots: true,
-        //       arrows: false
-        //     }
-        //   }
-        // ]
+        responsive: [
+          {
+            breakpoint: 531,
+            settings: {
+              arrows: false
+            }
+          }
+        ]
     });
 
     //слайдер карточки товара
