@@ -1,19 +1,18 @@
 .advantage {
-    padding: 40px 10px 50px;
+    padding: 40px 0 50px;
     position: relative;
 
     &__items {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;    
+        grid-gap: 30px;
     }
 
     &__item {
         padding: 25px;
-        width: 545px;
-        height: 141px;
+        max-width: 566px;
+        min-height: 141px;
         background-color: #F4F4F4;
-        margin-top: 30px;
-        margin-right: 40px;
 
         &:nth-child(2),
         &:nth-child(4) {

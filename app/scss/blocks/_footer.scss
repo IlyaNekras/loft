@@ -7,15 +7,17 @@
         display: flex;
         justify-content: space-between;
 
-        h3 {
-            text-transform: uppercase;
-            font-size: 14px;
-            font-weight: 700;
-            margin-bottom: 13px;
-        }
+
     }
 
-    &__navigation {
+    &__navigation-title {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 13px;
+    }
+
+    &__navigation-links {
         min-width: 384px;
         height: 68px;
         display: flex;
@@ -50,7 +52,7 @@
         line-height: 1.4;
         color: $main-color;
 
-        h3 {
+        &-logo {
             color: #000;
             font-size: 42px;
             font-weight: 900;
@@ -99,7 +101,7 @@
 
     &__contacts-social a {
         &:nth-child(2) {
-            margin: 0 30px;
+            margin: 15px 30px;
             text-transform: uppercase;
         }
     }

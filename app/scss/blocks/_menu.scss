@@ -15,7 +15,7 @@
         position: absolute;
         height: 13px;
         width: 20px;
-        background-image: url('../../icons/menu-icon.svg');
+        background-image: url('../icons/menu-icon.svg');
         background-repeat: no-repeat;
         left: 25px;
         top: 13px;
@@ -82,7 +82,7 @@
 
     &-content {
         &__exit {
-            content: url('../../icons/exit.svg');
+            content: url('../icons/exit.svg');
             position: absolute;
             top: 20px;
             right: 15px;
@@ -349,7 +349,7 @@
     }
 
     &__category-point {
-        background-image: url('../../icons/point-btn.svg');
+        background-image: url('../icons/point-btn.svg');
         background-repeat: no-repeat;
         position: absolute;
         width: 3px;
