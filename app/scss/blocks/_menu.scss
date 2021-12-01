@@ -1,7 +1,7 @@
 .menu {
     min-height: 126px;
     width: 100%;
-    padding: 46px 0 30px 0;
+    padding-top: 46px;
 
     &__wrapper {
         position: relative;
@@ -313,6 +313,9 @@
         display: inline-block;
         margin-left: 10px;
         color: $main-color;
+        span{
+            color: #E92D2D;
+        }
     }
 
 
