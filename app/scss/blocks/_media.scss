@@ -246,6 +246,13 @@
             }
         }
     }
+
+    .cabinet {
+
+        &__data {
+            margin-right: 50px;
+        }
+    }
 }
 
 
@@ -377,6 +384,18 @@
     .condition {
         padding: 15px 0 30px;
     }
+
+    .cabinet {
+        margin-bottom: 70px;
+
+        &__wrap {
+            display: block;
+        }
+
+        &__col-name {
+            width: 63%;
+        }
+    }
 }
 
 @media (max-width: 723px) {
@@ -495,6 +514,7 @@
 
 
     }
+
     .basket {
         &__price-percent {
             display: none;
@@ -585,7 +605,7 @@
         }
     }
 
-    
+
 }
 
 @media (max-width: 589px) {
@@ -603,6 +623,17 @@
                 margin-top: 3px;
             }
         }
+    }
+
+    .cabinet {
+        &__bonus {
+            display: block;
+        }
+
+        &__bonus-rules {
+            margin-top: 15px;
+        }
+
     }
 }
 
@@ -731,6 +762,7 @@
             font-size: 11px;
             margin: 10px 10px 0 0;
         }
+
         &__price,
         &__price-item {
             margin-top: 10px;
@@ -765,6 +797,7 @@
 
     .basket {
         margin-bottom: 40px;
+
         &__item {
             height: auto;
         }
@@ -792,11 +825,13 @@
         &__price-box {
             font-size: 12px;
         }
-        &__total-box{
+
+        &__total-box {
             display: block;
             text-align: center;
         }
-        &__total-price{
+
+        &__total-price {
             margin-bottom: 30px;
         }
 
@@ -804,6 +839,9 @@
 }
 
 @media (max-width: 449px) {
+    .container{
+        padding: 0 15px;
+    }
     .menu {
         &__category {
             min-width: 50px;
@@ -811,7 +849,38 @@
         }
     }
 
+    .cabinet {
+        &__table {
+            display: none;
+        }
 
+        &__table-adaptive {
+            display: block;
+            margin: 20px 0;
+        }
+
+        &__col-item {
+            padding: 10px 5px;
+            width: 50%;
+        }
+
+        &__str-box {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        &__str-data {
+            display: flex;
+            background-color: #F3F3F3;
+            color: #686868;
+            font-size: 10px;
+
+            p {
+                padding: 5px;
+            }
+        }
+    }
 
 }
 
@@ -931,6 +1000,13 @@
                 top: 18px;
                 left: -20px;
             }
+        }
+    }
+
+    .cabinet {
+        &__bonus-items {
+            justify-content: start;
+            background-color: #fff;
         }
     }
 
