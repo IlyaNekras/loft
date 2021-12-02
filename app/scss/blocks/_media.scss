@@ -563,6 +563,12 @@
         }
     }
 
+    .catalog {
+        &__sort {
+            right: 32px;
+        }
+    }
+
 
 }
 
@@ -742,6 +748,29 @@
         }
     }
 
+    .catalog {
+        .container {
+            padding: 0 15px;
+        }
+
+        &-filters {
+            position: absolute;
+            left: -100%;
+            top: 0;
+            z-index: 11;
+            transition: all 0.4s;
+        }
+
+        &__filter-btn,
+        &__filter-exit {
+            display: block;
+        }
+
+
+        .jq-selectbox__dropdown {
+            left: 20px;
+        }
+    }
 }
 
 @media (max-width: 530px) {
@@ -1014,7 +1043,12 @@
     }
 
     .breadcrumbs-list {
-        font-size: 9px;
+
+        // font-size: 0;
+        &__item {
+            padding-right: 5px;
+            margin-right: 3px;
+        }
     }
 
     .about {

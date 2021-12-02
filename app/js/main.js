@@ -28,8 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //скрыть/показать меню
 
-    let burger = document.querySelector('.menu__burger'),
-        menuContent = document.querySelector('.menu-content'),
+    let menuContent = document.querySelector('.menu-content'),
         exitBtn = document.querySelector('.menu-content__exit'),
         menuLink = document.querySelectorAll('.menu-content__link');
 
@@ -43,9 +42,6 @@ window.addEventListener('DOMContentLoaded', () => {
             menuContent.classList.remove('menu-content_active');
         }
     }
-    // burger.addEventListener('click', function () {
-    //     menuContent.classList.toggle('menu-content_active');
-    // });
     exitBtn.addEventListener('click', function () {
         menuContent.classList.toggle('menu-content_active');
     });
@@ -168,5 +164,18 @@ window.addEventListener('DOMContentLoaded', () => {
         spasing: "3px",
     });
 
+    //появление фильтров в каталоге при адаптиве
 
+    let filterBtn = document.querySelector('.catalog__filter-btn'),
+        catalogFilters =  document.querySelector('.catalog-filters'),
+        filterExit = document.querySelector('.catalog__filter-exit');
+
+    
+    filterBtn.addEventListener('click', function () {
+        catalogFilters.style.left = "0";
+    });
+
+    filterExit.addEventListener('click', function () {
+        catalogFilters.style.left = "-100%";
+    });
 });
