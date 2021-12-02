@@ -139,8 +139,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //активность сердечка
 
-    $('.heart-icon').on('click', function () {
-        $(this).toggleClass('heart-icon_active');
+    $('.favorite').on('click', function () {
+        $(this).toggleClass('favorite_active');
     });
 
     //слайдер значения цены

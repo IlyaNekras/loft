@@ -384,33 +384,7 @@
         }
     }
 
-    .heart-icon {
-        width: 22px;
-        height: 19px;
-        border: none;
-        position: absolute;
-        top: 21px;
-        right: 16px;
-        background: transparent;
-        z-index: 9;
-
-        &::before {
-            width: 22px;
-            height: 19px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            content: '';
-            background-image: url(../icons/heart-icon.svg);
-            background-repeat: no-repeat;
-        }
-
-        &_active::before {
-            height: 21px;
-            background-image: url(../icons/heart-solid.svg);
-        }
-
-    }
+   
 
 
     &__item-percent {
