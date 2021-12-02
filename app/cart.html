@@ -434,13 +434,19 @@
                     <p class="cart__name">Динс Velvet Yellow</p>
                     <p class="cart__subname">Диваны</p>
                     <div class="cart__box">
-                        <p class="cart__price">28 490₽</p>
-                        <button class="cart__btn">Купить</button>
-                        <button class="cart__favorite">
-                            <div class="favorite favorite-cart">
+                        <div class="cart__item-box">
+                            <p class="cart__price">28 490₽</p>
+                        </div>
+                        <div class="cart__item-box"><button class="cart__btn">Купить</button></div>
+                        <div class="cart__item-box">
+                            <div class="cart__favorite">
+                                <div class="favorite favorite-cart">
+                                </div>
+                                <p>Добавить в желаемое</p>
                             </div>
-                            <p>Добавить в желаемое</p>
-                        </button>
+                        </div>
+
+
                     </div>
 
 
@@ -487,8 +493,8 @@
                     <a class="cart__item" href="#delivery">Доставка и оплата</a>
                 </div>
                 <div id="char" class="cart__box-item cart__box-item_active">
-                    <ul class="cart__character-inner ">
-                        <div class="cart__left-content">
+                    <div class="cart__character-inner ">
+                        <ul class="cart__left-content">
                             <li>
                                 <p class="cart__feature-left">Размер</p>
                                 <p class="cart__feature-right">218 × 95 × 90 (Дл. × Шир. × Выс.)</p>
@@ -517,8 +523,8 @@
                                 <p class="cart__feature-left">Наполнение подушек</p>
                                 <p class="cart__feature-right">крошка ППУ, холлофайбер</p>
                             </li>
-                        </div>
-                        <div class="cart__right-content">
+                        </ul>
+                        <ul class="cart__right-content">
                             <li>
                                 <p class="cart__feature-left">Бельевой ящик</p>
                                 <p class="cart__feature-right">есть</p>
@@ -543,12 +549,14 @@
                                 <p class="cart__feature-left">Производитель</p>
                                 <p class="cart__feature-right">Россия</p>
                             </li>
-                        </div>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
                 <div id="reviews" class="cart__box-item">
                     <div class="cart__reviews-item">
-                        <img class="cart__reviews-img" src="img/photo.png" alt="photo">
+                        <div class="cart__reviews-img">
+                             <img src="img/photo.png" alt="photo">
+                        </div>
                         <div class="cart__reviews-inner">
                             <h4 class="cart__reviews-name">Мария Иванова</h4>
                             <p class="cart__reviews-age">27 лет</p>
@@ -558,8 +566,9 @@
                         </div>
                     </div>
                     <div class="cart__reviews-item">
-                        <img class="cart__reviews-img" src="img/photo.png" alt="photo">
-                        <div class="cart__reviews-inner">
+                        <div class="cart__reviews-img">
+                            <img src="img/photo.png" alt="photo">
+                       </div>                        <div class="cart__reviews-inner">
                             <h4 class="cart__reviews-name">Мария Иванова</h4>
                             <p class="cart__reviews-age">27 лет</p>
                             <p class="cart__reviews-text">Отличный диван! Простые формы, безупречный стиль и
@@ -568,8 +577,9 @@
                         </div>
                     </div>
                     <div class="cart__reviews-item">
-                        <img class="cart__reviews-img" src="img/photo.png" alt="photo">
-                        <div class="cart__reviews-inner">
+                        <div class="cart__reviews-img">
+                            <img src="img/photo.png" alt="photo">
+                       </div>                        <div class="cart__reviews-inner">
                             <h4 class="cart__reviews-name">Мария Иванова</h4>
                             <p class="cart__reviews-age">27 лет</p>
                             <p class="cart__reviews-text">Отличный диван! Простые формы, безупречный стиль и

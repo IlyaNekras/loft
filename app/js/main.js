@@ -88,14 +88,12 @@ window.addEventListener('DOMContentLoaded', () => {
         adaptiveHeight: true,
         prevArrow: '<button type="button" class="prev"><img src="icons/arrow-slider.svg"></button>',
         nextArrow: '<button type="button" class="next"><img src="icons/arrow-slider.svg"></button>',
-        responsive: [
-          {
+        responsive: [{
             breakpoint: 531,
             settings: {
-              arrows: false
+                arrows: false
             }
-          }
-        ]
+        }]
     });
 
     //слайдер карточки товара
@@ -107,7 +105,15 @@ window.addEventListener('DOMContentLoaded', () => {
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.cart__carousel-items'
+        asNavFor: '.cart__carousel-items',
+        responsive: [{
+            breakpoint: 703,
+            settings: {
+                dots: true,
+                autoplay: true,
+            }
+
+        }]
     });
     $('.cart__carousel-items').slick({
         speed: 1200,
@@ -119,7 +125,8 @@ window.addEventListener('DOMContentLoaded', () => {
         asNavFor: '.cart__carousel-inner',
         dots: false,
         centerMode: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+
     });
 
 
