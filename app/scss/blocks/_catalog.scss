@@ -382,13 +382,13 @@
         display: inline-block;
         position: relative;
         margin-top: 35px;
-        padding: 0 32px;
+        padding: 0 20px;
         max-width: 263px;
 
         &-hidden {
             display: none;
             position: absolute;
-            bottom: -110px;
+            bottom: -145px;
             left: 0;
             padding: 0 20px 32px;
             width: 263px;
@@ -433,7 +433,7 @@
     &__img {
         display: block;
         margin: 0 auto;
-        padding-top: 74px;
+        padding: 74px 12px 0;
         margin-bottom: 54px;
     }
 
@@ -491,6 +491,7 @@
     &__dimensions-size {
         font-size: 12px;
         margin-bottom: 8px;
+        margin-top: 15px;
         font-weight: 500;
     }
 
