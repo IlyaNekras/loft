@@ -51,9 +51,6 @@ window.addEventListener('DOMContentLoaded', () => {
             menuContent.classList.toggle('menu-content_active');
         });
     });
-
-
-
     //сортировка карточки товара
 
     let sortList = document.querySelector('.catalog__sort-list'),

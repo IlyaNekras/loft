@@ -48,7 +48,6 @@
 
             &-category {
                 margin-top: 21px;
-
             }
         }
 
@@ -74,7 +73,8 @@
 
         &__text {
             margin-left: 20px;
-            span{
+
+            span {
                 color: #E92D2D;
             }
         }
@@ -240,10 +240,12 @@
     &__category {
         height: 100%;
         width: 150px;
+
         &_stock,
-        &_new{
+        &_new {
             display: none;
         }
+
         &-office {
             width: 190px;
         }
@@ -310,7 +312,8 @@
         display: inline-block;
         margin-left: 10px;
         color: $main-color;
-        span{
+
+        span {
             color: #E92D2D;
         }
     }
@@ -354,21 +357,23 @@
         position: absolute;
         width: 3px;
         height: 16px;
-        top: 25px;
-        left: 98%;
+        bottom: 27px;
         cursor: pointer;
+        bottom: 27px;
+        left: 96%;
+        z-index: 7;
     }
 
     &__category-list {
         position: absolute;
         display: none;
-        right: 0;
+        right: 25px;
         padding: 12px 13px;
         width: 151px;
         z-index: 11;
         background-color: #fff;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
-        top: 70px;
+        top: auto;
         font-size: 14px;
 
         &_active {
