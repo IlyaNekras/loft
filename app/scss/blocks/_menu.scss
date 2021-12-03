@@ -15,10 +15,12 @@
         position: absolute;
         height: 13px;
         width: 20px;
-        background-image: url('../icons/menu-icon.svg');
         background-repeat: no-repeat;
         left: 25px;
         top: 13px;
+        img{
+            padding: 10px;
+        }
     }
 
     &-content {
@@ -352,16 +354,17 @@
     }
 
     &__category-point {
-        background-image: url('../icons/point-btn.svg');
-        background-repeat: no-repeat;
         position: absolute;
         width: 3px;
         height: 16px;
         bottom: 27px;
         cursor: pointer;
-        bottom: 27px;
-        left: 95%;
+        bottom: 37px;
+        left: 94%;
         z-index: 7;
+        img{
+            padding: 10px;
+        }
     }
 
     &__category-list {

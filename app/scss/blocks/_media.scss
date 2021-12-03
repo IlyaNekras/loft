@@ -95,6 +95,9 @@
             }
 
         }
+        &__category-point {
+            left: 95%;}
+        
     }
 
     .cart {
@@ -135,6 +138,8 @@
         &__phone {
             display: none;
         }
+        &__category-point {
+            left: 94%;}
     }
 
     .carousel {
@@ -248,6 +253,7 @@
             font-size: 14px;
         }
     }
+
     .about {
 
         .title {
@@ -377,6 +383,7 @@
     }
 
 }
+
 @media (max-width: 759px) {
 
     .menu {
@@ -393,6 +400,10 @@
             }
         }
 
+        &__category-point {
+            left: 93%;
+        }
+
         &__category-list {
             font-size: 12px;
             width: 136px;
@@ -400,6 +411,7 @@
         }
 
     }
+
     .about {
         padding: 18px 0 15px;
 
@@ -861,6 +873,7 @@
             color: $main-color;
             margin: 5px 23px 0;
         }
+
         &__catalog-btn {
             display: none;
         }
@@ -938,6 +951,7 @@
             width: 14px;
             height: 12px;
         }
+
         &__img {
             width: 95px;
         }
