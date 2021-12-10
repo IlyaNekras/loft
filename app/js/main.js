@@ -180,7 +180,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     $('.filters-style').styler();
 
-
     //звездный рейтинг
 
     $(".rate-yo").rateYo({
@@ -192,16 +191,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //появление фильтра в каталоге при адаптиве
 
-    let filterBtn = document.querySelector('.catalog__filter-btn'),
-        catalogFilters = document.querySelector('.catalog-filters'),
-        filterExit = document.querySelector('.catalog__filter-exit');
-
-
-    filterBtn.addEventListener('click', function () {
-        catalogFilters.style.left = "0";
+    $('.catalog__filter-btn').on('click', function () {
+        $('.catalog-filters').addClass('catalog-filters_active');
     });
-
-    filterExit.addEventListener('click', function () {
-        catalogFilters.style.left = "-100%";
+    $('.catalog__filter-exit').on('click', function () {
+        $('.catalog-filters').removeClass('catalog-filters_active');
+    });
+    $(document).mouseup(function (e) {
+        if (!$('.catalog-filters').is(e.target) && $('.catalog-filters').has(e.target).length === 0) {
+            $('.catalog-filters').removeClass('catalog-filters_active');
+        }
     });
 });
