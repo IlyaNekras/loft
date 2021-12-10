@@ -74,7 +74,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     });
 
-    //слайдер главной страницы
+    //слайдер на главной странице
 
     $('.carousel__inner').slick({
         speed: 1200,
@@ -122,6 +122,35 @@ window.addEventListener('DOMContentLoaded', () => {
 
     });
 
+    // слайдер меню на мобильных устройствах
+    $('.menu__category-slider').slick({
+        arrows: false,
+        infinite: false,
+        variableWidth: true,
+        slidesToShow: 8,
+        slidesToScroll: 4,
+        responsive: [{
+                breakpoint: 660,
+                settings: {
+                    slidesToShow: 7,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 425,
+                settings: {
+                    slidesToScroll: 5
+                }
+            },
+            {
+                breakpoint: 380,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 3
+                }
+            },
+        ]
+    });
 
     //табы
 
@@ -161,13 +190,13 @@ window.addEventListener('DOMContentLoaded', () => {
         spasing: "3px",
     });
 
-    //появление фильтров в каталоге при адаптиве
+    //появление фильтра в каталоге при адаптиве
 
     let filterBtn = document.querySelector('.catalog__filter-btn'),
-        catalogFilters =  document.querySelector('.catalog-filters'),
+        catalogFilters = document.querySelector('.catalog-filters'),
         filterExit = document.querySelector('.catalog__filter-exit');
 
-    
+
     filterBtn.addEventListener('click', function () {
         catalogFilters.style.left = "0";
     });

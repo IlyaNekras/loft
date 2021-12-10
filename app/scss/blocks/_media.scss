@@ -95,9 +95,11 @@
             }
 
         }
+
         &__category-point {
-            left: 95%;}
-        
+            left: 95%;
+        }
+
     }
 
     .cart {
@@ -138,8 +140,10 @@
         &__phone {
             display: none;
         }
+
         &__category-point {
-            left: 94%;}
+            left: 94%;
+        }
     }
 
     .carousel {
@@ -263,7 +267,8 @@
         &__wrap {
             margin: 0;
         }
-        &__box{
+
+        &__box {
             height: 105%;
         }
 
@@ -494,11 +499,17 @@
 
 @media (max-width: 702px) {
     .menu {
-        &__category-box {
-            box-shadow: none;
-            justify-content: space-between;
-            overflow-x: clip;
+        .slick-track {
+            height: 86px;
+            top: 1px;
+        }
 
+        &__overlay-slider {
+            display: block;
+        }
+
+        &__overlay {
+            display: none;
         }
 
         &__category:hover .menu__category-descr {
@@ -511,7 +522,6 @@
             height: 80px;
             margin-right: 7px;
             text-align: center;
-
             &_stock,
             &_new {
                 display: block;
@@ -527,7 +537,7 @@
             }
 
             &-iconblack {
-                padding: 0 13px;
+                padding: 0;
                 display: inherit;
                 margin: 0 auto;
             }
@@ -538,7 +548,7 @@
 
             &-descr {
                 margin: 0 auto;
-                margin-top: 5px;
+                margin-top: 8px;
             }
 
             &-point {
@@ -712,7 +722,7 @@
     .menu {
         &__category {
             width: 60px;
-            height: 60px;
+            height: 65px;
             font-size: 10px;
 
             &-office {
@@ -720,7 +730,7 @@
             }
 
             &-descr {
-                margin-top: 6px;
+                margin-top: 8px;
             }
         }
     }
@@ -811,6 +821,10 @@
 
         padding: 46px 0 15px;
 
+        .slick-track {
+            height: 89px;
+        }
+
         &__search {
             display: none;
 
@@ -841,7 +855,7 @@
 
         &__category-descr {
             display: inline-block;
-            margin-top: 27px;
+            margin-top: 29px;
         }
     }
 
@@ -908,10 +922,6 @@
 
             &-item {
                 margin-top: 14px;
-            }
-
-            &-iconblack {
-                padding: 0 11px;
             }
         }
     }
@@ -1014,6 +1024,8 @@
     }
 
     .menu {
+        margin-bottom: 10px;
+
         &__category {
             min-width: 50px;
             height: 50px;

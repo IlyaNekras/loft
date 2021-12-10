@@ -19,7 +19,8 @@
         background-repeat: no-repeat;
         left: 15px;
         top: 5px;
-        img{
+
+        img {
             padding: 10px;
         }
     }
@@ -220,6 +221,16 @@
         }
     }
 
+    &__overlay-slider {
+        display: none;
+        margin-top: 20px;
+    }
+    &__overlay {
+        display: block;
+        margin-top: 20px;
+    }
+
+
     &__category-box {
         position: relative;
         display: flex;
@@ -363,7 +374,8 @@
         bottom: 37px;
         left: 94%;
         z-index: 7;
-        img{
+
+        img {
             padding: 10px;
         }
     }
